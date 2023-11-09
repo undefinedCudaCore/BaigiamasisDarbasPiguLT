@@ -43,12 +43,12 @@
   <ItemGroup>
     <Compile Include="Driver.cs" />
     <Compile Include="Pages\Common.cs" />
-    <Compile Include="Pages\PiguLTPage\AddToCartPage.cs" />
-    <Compile Include="Pages\PiguLTPage\CheckOrderPage.cs" />
-    <Compile Include="Pages\PiguLTPage\Locators.cs" />
-    <Compile Include="Pages\PiguLTPage\LoginPage.cs" />
-    <Compile Include="Pages\PiguLTPage\SearchItemPage.cs" />
-    <Compile Include="Pages\PiguLTPage\UseWishlistPage.cs" />
+    <Compile Include="Pages\PiguLT\AddToCartPage.cs" />
+    <Compile Include="Pages\PiguLT\CheckOrderPage.cs" />
+    <Compile Include="Pages\PiguLT\Locators.cs" />
+    <Compile Include="Pages\PiguLT\LoginPage.cs" />
+    <Compile Include="Pages\PiguLT\SearchItemPage.cs" />
+    <Compile Include="Pages\PiguLT\UseWishlistPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
