@@ -45,6 +45,7 @@
     <Compile Include="Pages\Common.cs" />
     <Compile Include="Pages\PiguLTPage\AddToCartPage.cs" />
     <Compile Include="Pages\PiguLTPage\CheckOrderPage.cs" />
+    <Compile Include="Pages\PiguLTPage\Locators.cs" />
     <Compile Include="Pages\PiguLTPage\LoginPage.cs" />
     <Compile Include="Pages\PiguLTPage\SearchItemPage.cs" />
     <Compile Include="Pages\PiguLTPage\UseWishlistPage.cs" />
