@@ -12,6 +12,7 @@ namespace SeleniumTests.PiguLT
         {
             string loginEmail = "testforgraduationthesis@gmail.com";
             string loginPassword = "seleniumtestforgraduationthesis";
+            string displayMyAccountName = "Graduation Thesis";
 
             LoginPage.Open();
             LoginPage.ClickOnProfileIcon();
@@ -23,6 +24,8 @@ namespace SeleniumTests.PiguLT
             LoginPage.ClickOnMyAccount();
             LoginPage.ClickOnEditProfile();
             LoginPage.GetMyAccountName();
+
+            Assert.That(LoginPage.GetMyAccountName(), Is.EqualTo(displayMyAccountName));
         }
     }
 }
