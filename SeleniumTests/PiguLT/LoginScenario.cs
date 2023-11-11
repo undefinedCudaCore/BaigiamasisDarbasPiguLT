@@ -5,7 +5,8 @@ using SeleniumTests.BaseTests;
 
 namespace SeleniumTests.PiguLT
 {
-    internal class LoginScenario
+    internal class LoginScenario : BaseTest
     {
+
     }
 }
