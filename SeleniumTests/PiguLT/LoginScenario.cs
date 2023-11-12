@@ -33,12 +33,10 @@ namespace SeleniumTests.PiguLT
             }
             catch (Exception ex)
             {
-                LoginPage.GetFailScreenshot();
+                LoginPage.GetTestFailScreenshot();
 
                 throw;
             }
-
-
         }
     }
 }

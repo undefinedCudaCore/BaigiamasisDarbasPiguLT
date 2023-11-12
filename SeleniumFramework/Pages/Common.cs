@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 using System;
 using System.Drawing;
 
@@ -42,6 +43,17 @@ namespace SeleniumFramework.Pages
                                              DateTime.Now.ToString("dd_MMMM_hh_mm_ss_tt") + ".png");
 
             memoryImage.Save(fileName);
+        }
+
+        internal static IWebElement GetElementForJavascriptExecutor(string locator)
+        {
+            return GetElement(locator);
+        }
+
+        public static WebDriverWait Wait()
+        {
+            WebDriverWait wait = new WebDriverWait(Driver.GetDriver(), TimeSpan.FromSeconds(1));
+            return wait;
         }
     }
 }

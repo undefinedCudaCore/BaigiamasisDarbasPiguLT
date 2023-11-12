@@ -13,5 +13,6 @@
             internal static string EditProfile = "//a[contains(@href, 'u/info')]";
             internal static string MyAccountName = "//*[@id='editMyInfo']/div[2]/div/div[1]";
         }
+
     }
 }

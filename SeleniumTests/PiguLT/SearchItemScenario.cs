@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using NUnit.Framework;
+using SeleniumFramework.Pages.PiguLTPage;
+using SeleniumTests.BaseTests;
+using System;
 
 namespace SeleniumTests.PiguLT
 {
-    internal class SearchItemScenario
+    internal class SearchItemScenario : BaseTest
     {
     }
 }
