@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
 using SeleniumFramework.Pages.PiguLTPage;
 using SeleniumTests.BaseTests;
-
+using System;
 
 namespace SeleniumTests.PiguLT
 {
@@ -10,9 +10,11 @@ namespace SeleniumTests.PiguLT
         [Test]
         public void LoginToWebShopAccount()
         {
-            string loginEmail = "testforgraduationthesis@gmail.com";
+            //string loginEmail = "testforgraduationthesis@gmail.com";
+            //string loginPassword = "seleniumtestforgraduationthesis";
+            string loginEmail = "duationthetestforgraduat@gmail.com";
             string loginPassword = "seleniumtestforgraduationthesis";
-            string displayMyAccountName = "Graduation Thesis";
+            string displayMyAccountName = "Graduation Thesis2";
 
             LoginPage.Open();
             LoginPage.ClickOnProfileIcon();
@@ -25,7 +27,18 @@ namespace SeleniumTests.PiguLT
             LoginPage.ClickOnEditProfile();
             LoginPage.GetMyAccountName();
 
-            Assert.That(LoginPage.GetMyAccountName(), Is.EqualTo(displayMyAccountName));
+            try
+            {
+                Assert.That(LoginPage.GetMyAccountName(), Is.EqualTo(displayMyAccountName));
+            }
+            catch (Exception ex)
+            {
+                LoginPage.GetFailScreenshot();
+
+                throw;
+            }
+
+
         }
     }
 }

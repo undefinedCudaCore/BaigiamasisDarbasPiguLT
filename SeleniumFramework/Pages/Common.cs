@@ -1,4 +1,7 @@
 ﻿using OpenQA.Selenium;
+using System;
+using System.Drawing;
+
 
 namespace SeleniumFramework.Pages
 {
@@ -22,6 +25,23 @@ namespace SeleniumFramework.Pages
         internal static string GetElementText(string locator)
         {
             return GetElement(locator).Text;
+        }
+
+        public static void TakeScreenshot()
+        {
+            Bitmap memoryImage;
+            memoryImage = new Bitmap(1000, 900);
+            Size size = new Size(memoryImage.Width, memoryImage.Height);
+
+            Graphics memoryGraphics = Graphics.FromImage(memoryImage);
+
+            memoryGraphics.CopyFromScreen(0, 0, 0, 0, size);
+
+            string fileName = string.Format(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) +
+                                      @"\Screenshot" + "_" +
+                                             DateTime.Now.ToString("dd_MMMM_hh_mm_ss_tt") + ".png");
+
+            memoryImage.Save(fileName);
         }
     }
 }

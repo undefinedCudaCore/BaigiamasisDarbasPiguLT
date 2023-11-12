@@ -1,5 +1,8 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using System.Drawing.Imaging;
+using System;
+using System.Runtime;
 
 namespace SeleniumFramework
 {
@@ -20,11 +23,6 @@ namespace SeleniumFramework
         internal static void OpenPage(string url)
         {
             driver.Url = url;
-        }
-
-        public static string GetPageTitle()
-        {
-            return driver.Title;
         }
 
         public static void QuitDriver()
