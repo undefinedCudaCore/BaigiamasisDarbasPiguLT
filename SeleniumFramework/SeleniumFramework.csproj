@@ -36,6 +36,9 @@
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="SeleniumExtras.WaitHelpers, Version=3.11.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetSeleniumExtras.WaitHelpers.3.11.0\lib\net45\SeleniumExtras.WaitHelpers.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -55,12 +58,12 @@
   <ItemGroup>
     <Compile Include="Driver.cs" />
     <Compile Include="Pages\Common.cs" />
-    <Compile Include="Pages\PiguLT\AddToCartPage.cs" />
-    <Compile Include="Pages\PiguLT\CheckOrderPage.cs" />
+    <Compile Include="Pages\PiguLT\CartPage.cs" />
+    <Compile Include="Pages\PiguLT\OrderPage.cs" />
     <Compile Include="Pages\PiguLT\Locators.cs" />
     <Compile Include="Pages\PiguLT\LoginPage.cs" />
-    <Compile Include="Pages\PiguLT\SearchItemPage.cs" />
-    <Compile Include="Pages\PiguLT\UseWishlistPage.cs" />
+    <Compile Include="Pages\PiguLT\SearchPage.cs" />
+    <Compile Include="Pages\PiguLT\WishlistPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -4,16 +4,11 @@ using System;
 
 namespace SeleniumFramework.Pages.PiguLTPage
 {
-    public class SearchItemPage
+    public class SearchPage
     {
         public static void Open()
         {
             Driver.OpenPage("https://pigu.lt/lt/");
-        }
-
-        public static void Waiting()
-        {
-            Common.Wait();
         }
 
         public static void ClickAllowAllCookies()
@@ -25,6 +20,7 @@ namespace SeleniumFramework.Pages.PiguLTPage
         public static void EnterSearchPhrase(string searchPhrase)
         {
             string locator = Locators.SearchItemPage.InputSearch;
+            Common.WaitForSearchInput(locator);
             Common.SendKeysToElement(locator, searchPhrase);
         }
 

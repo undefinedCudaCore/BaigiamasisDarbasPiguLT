@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
-using SeleniumFramework.Pages.PiguLTPage;
 using System;
+using System.Diagnostics;
 using System.Drawing;
 using System.Threading;
 
@@ -51,9 +51,9 @@ namespace SeleniumFramework.Pages
             return GetElement(locator);
         }
 
-        public static void Wait()
+        internal static void WaitForSearchInput(string locator)
         {
-            Thread.Sleep(5000);
+            Thread.Sleep(3000);
         }
     }
 }

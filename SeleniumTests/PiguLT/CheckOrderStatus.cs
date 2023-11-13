@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SeleniumTests.PiguLT
 {
-    internal class CheckOrderScenario
+    internal class CheckOrderStatus
     {
     }
 }

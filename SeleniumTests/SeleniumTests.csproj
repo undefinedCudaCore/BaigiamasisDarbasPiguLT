@@ -62,11 +62,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseTests\BaseTest.cs" />
-    <Compile Include="PiguLT\AddToCartScenario.cs" />
-    <Compile Include="PiguLT\CheckOrderScenario.cs" />
-    <Compile Include="PiguLT\LoginScenario.cs" />
-    <Compile Include="PiguLT\SearchItemScenario.cs" />
-    <Compile Include="PiguLT\UseWishlistScenario.cs" />
+    <Compile Include="PiguLT\AddItemToCart.cs" />
+    <Compile Include="PiguLT\CheckOrderStatus.cs" />
+    <Compile Include="PiguLT\LoginToPage.cs" />
+    <Compile Include="PiguLT\SearchForItem.cs" />
+    <Compile Include="PiguLT\AddItemToWishlist.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

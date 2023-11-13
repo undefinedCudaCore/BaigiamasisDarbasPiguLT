@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SeleniumTests.PiguLT
+namespace SeleniumFramework.Pages.PiguLTPage
 {
-    internal class UseWishlistScenario
+    internal class OrderPage
     {
     }
 }

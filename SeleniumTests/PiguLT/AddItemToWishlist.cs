@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SeleniumFramework.Pages.PiguLTPage
+namespace SeleniumTests.PiguLT
 {
-    internal class UseWishlistPage
+    internal class AddItemToWishlist
     {
     }
 }

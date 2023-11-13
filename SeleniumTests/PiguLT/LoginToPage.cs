@@ -5,16 +5,16 @@ using System;
 
 namespace SeleniumTests.PiguLT
 {
-    internal class LoginScenario : BaseTest
+    internal class LoginToPage : BaseTest
     {
         [Test]
         public void LoginToWebShopAccount()
         {
-            //string loginEmail = "testforgraduationthesis@gmail.com";
-            //string loginPassword = "seleniumtestforgraduationthesis";
-            string loginEmail = "duationthetestforgraduat@gmail.com";
+            string loginEmail = "testforgraduationthesis@gmail.com";
             string loginPassword = "seleniumtestforgraduationthesis";
-            string displayMyAccountName = "Graduation Thesis2";
+            //string loginEmail = "duationthetestforgraduat@gmail.com";
+            //string loginPassword = "seleniumtestforgraduationthesis";
+            string displayMyAccountName = "Graduation Thesis";
 
             LoginPage.Open();
             LoginPage.ClickOnProfileIcon();

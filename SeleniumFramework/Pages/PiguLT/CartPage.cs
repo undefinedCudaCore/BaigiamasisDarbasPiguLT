@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SeleniumFramework.Pages.PiguLTPage
 {
-    internal class CheckOrderPage
+    internal class CartPage
     {
     }
 }
