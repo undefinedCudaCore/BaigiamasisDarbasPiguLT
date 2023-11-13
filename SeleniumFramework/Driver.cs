@@ -26,6 +26,12 @@ namespace SeleniumFramework
             driver.Url = url;
         }
 
+        public static void MaximizeWindow()
+        {
+            GetDriver().Manage().Window.Maximize();
+        }
+
+
         public static void QuitDriver()
         {
             driver.Quit();

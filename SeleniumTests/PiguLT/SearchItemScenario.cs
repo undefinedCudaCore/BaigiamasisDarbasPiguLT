@@ -3,7 +3,6 @@ using SeleniumFramework;
 using SeleniumFramework.Pages.PiguLTPage;
 using SeleniumTests.BaseTests;
 using System;
-using System.Threading;
 
 namespace SeleniumTests.PiguLT
 {
@@ -22,9 +21,8 @@ namespace SeleniumTests.PiguLT
             SearchItemPage.EnterSearchPhrase(itemSearchPhrase);
             SearchItemPage.ClickSearchButton();
             SearchItemPage.ClickFoundItemImageButton();
-            //SearchItemPage.Waiting();
             //SearchItemPage.ScrollIntoView();
-            //SearchItemPage.ClickMoreInformationButton();
+            SearchItemPage.ClickMoreInformationButton();
 
             try
             {

@@ -40,11 +40,11 @@ namespace SeleniumFramework.Pages.PiguLTPage
             Common.ClickElement(locator);
         }
 
-        public static void ScrollIntoView()
-        {
-            string locator = Locators.SearchItemPage.MoreInformationButton;
-            ((IJavaScriptExecutor)Driver.GetDriver()).ExecuteScript("arguments[0].scrollIntoView(true);", Common.GetElementForJavascriptExecutor(locator));
-        }
+        //public static void ScrollIntoView()
+        //{
+        //    string locator = Locators.SearchItemPage.MoreInformationButton;
+        //    ((IJavaScriptExecutor)Driver.GetDriver()).ExecuteScript("arguments[0].scrollIntoView(true);", Common.GetElementForJavascriptExecutor(locator));
+        //}
 
         public static void ClickMoreInformationButton()
         {

@@ -1,7 +1,6 @@
 ﻿using NUnit.Framework;
 using SeleniumFramework;
 
-
 namespace SeleniumTests.BaseTests
 {
     internal class BaseTest
@@ -10,6 +9,7 @@ namespace SeleniumTests.BaseTests
         public void SetUp()
         {
             Driver.InitializeDriver();
+            Driver.MaximizeWindow();
         }
 
         [TearDown]
