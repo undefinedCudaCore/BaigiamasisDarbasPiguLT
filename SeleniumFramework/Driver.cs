@@ -3,6 +3,7 @@ using OpenQA.Selenium.Chrome;
 using System.Drawing.Imaging;
 using System;
 using System.Runtime;
+using OpenQA.Selenium.Support.UI;
 
 namespace SeleniumFramework
 {

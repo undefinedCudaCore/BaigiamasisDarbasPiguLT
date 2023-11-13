@@ -1,8 +1,9 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
+using SeleniumFramework.Pages.PiguLTPage;
 using System;
 using System.Drawing;
-
+using System.Threading;
 
 namespace SeleniumFramework.Pages
 {
@@ -50,10 +51,9 @@ namespace SeleniumFramework.Pages
             return GetElement(locator);
         }
 
-        public static WebDriverWait Wait()
+        public static void Wait()
         {
-            WebDriverWait wait = new WebDriverWait(Driver.GetDriver(), TimeSpan.FromSeconds(1));
-            return wait;
+            Thread.Sleep(5000);
         }
     }
 }

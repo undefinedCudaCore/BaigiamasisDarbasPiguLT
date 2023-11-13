@@ -11,15 +11,15 @@ namespace SeleniumFramework.Pages.PiguLTPage
             Driver.OpenPage("https://pigu.lt/lt/");
         }
 
-        public static void ClickAllowAllCookies()
-        {
-            string locator = Locators.SearchItemPage.AllowCoociesButton;
-            Common.ClickElement(locator);
-        }
-
         public static void Waiting()
         {
             Common.Wait();
+        }
+
+        public static void ClickAllowAllCookies()
+        {
+            string locator = Locators.SearchItemPage.AllowCookiesButton;
+            Common.ClickElement(locator);
         }
 
         public static void EnterSearchPhrase(string searchPhrase)

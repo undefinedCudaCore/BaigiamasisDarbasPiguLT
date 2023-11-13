@@ -1,7 +1,9 @@
 ﻿using NUnit.Framework;
+using SeleniumFramework;
 using SeleniumFramework.Pages.PiguLTPage;
 using SeleniumTests.BaseTests;
 using System;
+using System.Threading;
 
 namespace SeleniumTests.PiguLT
 {
@@ -15,11 +17,12 @@ namespace SeleniumTests.PiguLT
             string manufacturerCode = "X515EA-BQ1735W";
 
             SearchItemPage.Open();
-            //SearchItemPage.ClickAllowAllCookies();
-            //SearchItemPage.Waiting();
+            SearchItemPage.ClickAllowAllCookies();
+            SearchItemPage.Waiting();
             SearchItemPage.EnterSearchPhrase(itemSearchPhrase);
             SearchItemPage.ClickSearchButton();
             SearchItemPage.ClickFoundItemImageButton();
+            //SearchItemPage.Waiting();
             //SearchItemPage.ScrollIntoView();
             //SearchItemPage.ClickMoreInformationButton();
 
