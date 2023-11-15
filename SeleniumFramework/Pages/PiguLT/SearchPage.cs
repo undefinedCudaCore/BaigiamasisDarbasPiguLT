@@ -1,16 +1,7 @@
-﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
-using System;
-
-namespace SeleniumFramework.Pages.PiguLTPage
+﻿namespace SeleniumFramework.Pages.PiguLTPage
 {
     public class SearchPage
     {
-        public static void Open()
-        {
-            Driver.OpenPage("https://pigu.lt/lt/");
-        }
-
         public static void ClickAllowAllCookies()
         {
             string locator = Locators.SearchItemPage.AllowCookiesButton;

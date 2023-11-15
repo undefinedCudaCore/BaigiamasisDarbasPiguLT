@@ -23,5 +23,10 @@
             internal static string ProductName = "//*[@id='product-info']/h1";
             internal static string ProductManufactureCode = "//*[@id='field-info']/div/div/table/tbody/tr[3]/td[2]";
         }
+
+        internal class WishlistPage
+        {
+            internal static string AddToWishlistButton = "//*[@id='productBlock98465129']//*/button";
+        }
     }
 }

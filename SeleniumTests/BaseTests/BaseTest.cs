@@ -9,7 +9,6 @@ namespace SeleniumTests.BaseTests
         public void SetUp()
         {
             Driver.InitializeDriver();
-            Driver.MaximizeWindow();
         }
 
         [TearDown]

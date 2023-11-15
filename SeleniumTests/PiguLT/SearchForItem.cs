@@ -14,7 +14,6 @@ namespace SeleniumTests.PiguLT
             string foundProductName = "Nešiojamas kompiuteris Asus X515EA-BQ1735W";
             string manufacturerCode = "X515EA-BQ1735W";
 
-            SearchPage.Open();
             SearchPage.ClickAllowAllCookies();
             SearchPage.EnterSearchPhrase(itemSearchPhrase);
             SearchPage.ClickSearchButton();

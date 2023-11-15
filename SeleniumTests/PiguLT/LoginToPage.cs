@@ -10,17 +10,10 @@ namespace SeleniumTests.PiguLT
         [Test]
         public void LoginToWebShopAccount()
         {
-            string loginEmail = "testforgraduationthesis@gmail.com";
-            string loginPassword = "seleniumtestforgraduationthesis";
-            //string loginEmail = "duationthetestforgraduat@gmail.com";
-            //string loginPassword = "seleniumtestforgraduationthesis";
-            string displayMyAccountName = "Graduation Thesis";
-
-            LoginPage.Open();
             LoginPage.ClickOnProfileIcon();
             LoginPage.ClickOnBlueLoginButton();
-            LoginPage.EnterLoginEmail(loginEmail);
-            LoginPage.EnterLoginPassword(loginPassword);
+            LoginPage.EnterLoginEmail(Strings.LoginString.InputEmail1);
+            LoginPage.EnterLoginPassword(Strings.LoginString.InputPassword);
             LoginPage.ClickOnGreenLoginButton();
             LoginPage.ClickOnProfileIcon();
             LoginPage.ClickOnMyAccount();
@@ -29,7 +22,8 @@ namespace SeleniumTests.PiguLT
 
             try
             {
-                Assert.That(LoginPage.GetMyAccountName(), Is.EqualTo(displayMyAccountName));
+                Assert.That(LoginPage.GetMyAccountName(), 
+                    Is.EqualTo(Strings.LoginString.DisplayMyAccountName));
             }
             catch (Exception ex)
             {

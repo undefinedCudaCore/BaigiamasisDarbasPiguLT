@@ -21,7 +21,7 @@ namespace SeleniumFramework
             return driver;
         }
 
-        internal static void OpenPage(string url)
+        public static void OpenPage(string url)
         {
             driver.Url = url;
         }
@@ -30,7 +30,6 @@ namespace SeleniumFramework
         {
             GetDriver().Manage().Window.Maximize();
         }
-
 
         public static void QuitDriver()
         {
