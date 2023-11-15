@@ -10,12 +10,8 @@ namespace SeleniumTests.PiguLT
         [Test]
         public void SearchItemInWebShop()
         {
-            string itemSearchPhrase = "X515EA-BQ1735W";
-            string foundProductName = "Nešiojamas kompiuteris Asus X515EA-BQ1735W";
-            string manufacturerCode = "X515EA-BQ1735W";
-
             SearchPage.ClickAllowAllCookies();
-            SearchPage.EnterSearchPhrase(itemSearchPhrase);
+            SearchPage.EnterSearchPhrase(Strings.SearchItemString.ItemSearchPhrase);
             SearchPage.ClickSearchButton();
             SearchPage.ClickFoundItemImageButton();
             //SearchItemPage.ScrollIntoView();
@@ -23,8 +19,10 @@ namespace SeleniumTests.PiguLT
 
             try
             {
-                Assert.That(SearchPage.GetProductName(), Is.EqualTo(foundProductName));
-                Assert.That(SearchPage.ProductManufacturerCode(), Is.EqualTo(manufacturerCode));
+                Assert.That(SearchPage.GetProductName(), 
+                    Is.EqualTo(Strings.SearchItemString.FoundProductName));
+                Assert.That(SearchPage.ProductManufacturerCode(), 
+                    Is.EqualTo(Strings.SearchItemString.ManufacturerCode));
             }
             catch (Exception ex)
             {
