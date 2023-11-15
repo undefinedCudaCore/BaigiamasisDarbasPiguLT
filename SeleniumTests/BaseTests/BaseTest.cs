@@ -9,6 +9,8 @@ namespace SeleniumTests.BaseTests
         public void SetUp()
         {
             Driver.InitializeDriver();
+            Driver.OpenPage("https://pigu.lt/lt/");
+            Driver.MaximizeWindow();
         }
 
         [TearDown]
