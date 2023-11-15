@@ -10,18 +10,18 @@ namespace SeleniumTests.PiguLT
         [Test]
         public void LoginToWebShopAccount()
         {
-            LoginPage.ClickOnProfileIcon();
-            LoginPage.ClickOnBlueLoginButton();
-            LoginPage.EnterLoginEmail(Strings.LoginString.InputEmail1);
-            LoginPage.EnterLoginPassword(Strings.LoginString.InputPassword);
-            LoginPage.ClickOnGreenLoginButton();
-            LoginPage.ClickOnProfileIcon();
-            LoginPage.ClickOnMyAccount();
-            LoginPage.ClickOnEditProfile();
-            LoginPage.GetMyAccountName();
-
             try
             {
+                LoginPage.ClickOnProfileIcon();
+                LoginPage.ClickOnBlueLoginButton();
+                LoginPage.EnterLoginEmail(Strings.LoginString.InputEmail1);
+                LoginPage.EnterLoginPassword(Strings.LoginString.InputPassword);
+                LoginPage.ClickOnGreenLoginButton();
+                LoginPage.ClickOnProfileIcon();
+                LoginPage.ClickOnMyAccount();
+                LoginPage.ClickOnEditProfile();
+                LoginPage.GetMyAccountName();
+
                 Assert.That(LoginPage.GetMyAccountName(), 
                     Is.EqualTo(Strings.LoginString.DisplayMyAccountName));
             }

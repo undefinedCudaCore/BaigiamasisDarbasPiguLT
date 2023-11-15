@@ -10,20 +10,19 @@ namespace SeleniumTests.PiguLT
         [Test]
         public void AddItemToWishList()
         {
-            LoginPage.ClickOnProfileIcon();
-            LoginPage.ClickOnBlueLoginButton();
-            LoginPage.EnterLoginEmail(Strings.LoginString.InputEmail1);
-            LoginPage.EnterLoginPassword(Strings.LoginString.InputPassword);
-            LoginPage.ClickOnGreenLoginButton();
-            WishlistPage.EnterSearchPhrase(Strings.WishlistString.ItemSearchPhrase2);
-            WishlistPage.ClickSearchButton();
-            WishlistPage.ClickAddToWishlistButton();
-            WishlistPage.OpenWishlistButton();
-            WishlistPage.ClickAddToWishlistButton();
-
-
             try
             {
+                LoginPage.ClickOnProfileIcon();
+                LoginPage.ClickOnBlueLoginButton();
+                LoginPage.EnterLoginEmail(Strings.LoginString.InputEmail1);
+                LoginPage.EnterLoginPassword(Strings.LoginString.InputPassword);
+                LoginPage.ClickOnGreenLoginButton();
+                WishlistPage.EnterSearchPhrase(Strings.WishlistString.ItemSearchPhrase2);
+                WishlistPage.ClickSearchButton();
+                WishlistPage.ClickAddToWishlistButton();
+                WishlistPage.OpenWishlistButton();
+                WishlistPage.ClickAddToWishlistButton();
+
                 Assert.That(WishlistPage.GetWishlistProductName(),
                     Is.EqualTo(Strings.WishlistString.WishlistItem1));
             }
