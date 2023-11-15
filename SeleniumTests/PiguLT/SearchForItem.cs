@@ -26,8 +26,6 @@ namespace SeleniumTests.PiguLT
             catch (Exception ex)
             {
                 SearchPage.GetTestFailScreenshot();
-
-                throw;
             }
         }
     }

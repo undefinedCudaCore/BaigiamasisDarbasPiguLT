@@ -42,7 +42,7 @@
             internal static string CartButton = "//*[@id='cartWidget']";
             internal static string CartItemOne = "//*[@id='productSliceBlock434950543']/td[2]/div/a";
             internal static string CartItemTwo = "//*[@id='productSliceBlock434966868']/td[2]/div/a";
-            internal static string CartQuantityValue = "//*[@id='productSliceBlock434950543']/td[4]/div/input";
+            internal static string RemoveItem = "//*[@widget-attachpoint='removeFromCart']";
         }
     }
 }

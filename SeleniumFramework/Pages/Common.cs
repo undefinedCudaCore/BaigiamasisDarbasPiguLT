@@ -34,10 +34,10 @@ namespace SeleniumFramework.Pages
             return GetElement(locator).Text;
         }
 
-        public static void TakeScreenshot()
+        internal static void TakeScreenshot()
         {
             Bitmap memoryImage;
-            memoryImage = new Bitmap(1000, 900);
+            memoryImage = new Bitmap(1800, 1500);
             Size size = new Size(memoryImage.Width, memoryImage.Height);
 
             Graphics memoryGraphics = Graphics.FromImage(memoryImage);
@@ -51,7 +51,7 @@ namespace SeleniumFramework.Pages
             memoryImage.Save(fileName);
         }
 
-        internal static void WaitForSearchInput()
+        internal static void WaitForElement()
         {
             Thread.Sleep(3000);
         }

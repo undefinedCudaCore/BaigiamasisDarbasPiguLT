@@ -10,7 +10,7 @@
 
         public static void EnterSearchPhrase(string searchPhrase)
         {
-            Common.WaitForSearchInput();
+            Common.WaitForElement();
 
             string locator = Locators.SearchItemPage.InputSearch;
             Common.SendKeysToElement(locator, searchPhrase);

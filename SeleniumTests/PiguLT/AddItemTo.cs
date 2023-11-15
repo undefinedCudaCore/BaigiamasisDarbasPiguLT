@@ -19,42 +19,52 @@ namespace SeleniumTests.PiguLT
             WishlistPage.ClickSearchButton();
             WishlistPage.ClickAddToWishlistButton();
             WishlistPage.OpenWishlistButton();
+            WishlistPage.ClickAddToWishlistButton();
+
 
             try
             {
                 Assert.That(WishlistPage.GetWishlistProductName(),
                     Is.EqualTo(Strings.WishlistString.WishlistItem1));
-
-                WishlistPage.ClickAddToWishlistButton();
-
             }
             catch (Exception ex)
             {
-                SearchPage.GetTestFailScreenshot();
-
-                WishlistPage.ClickAddToWishlistButton();
+                WishlistPage.GetTestFailScreenshot();
             }
         }
 
         [Test]
         public void AddItemToCart()
         {
-            CartPage.ClickAllowAllCookies();
-            CartPage.EnterSearchPhrase(Strings.CartString.ItemSearchPhrase3);
-            CartPage.ClickSearchButton();
-            CartPage.SelectSortDropdown();
-            CartPage.SelectSortDropdownValue();
-            CartPage.ClickOnCartItemOne();
-            CartPage.AddToCartFirstProduct();
-            CartPage.ClickContinueShoppingButton();
-            CartPage.EnterSearchPhrase(Strings.CartString.ItemSearchPhrase4);
-            CartPage.ClickSearchButton();
-            CartPage.ScrollIntoView();
-            CartPage.ClickOnCartItemTwo();
-            CartPage.AddToCartSecondProduct();
-            CartPage.ClickContinueShoppingButton();
-            CartPage.ClickCartButton();
+            try
+            {
+                CartPage.ClickAllowAllCookies();
+                CartPage.EnterSearchPhrase(Strings.CartString.ItemSearchPhrase3);
+                CartPage.ClickSearchButton();
+                CartPage.SelectSortDropdown();
+                CartPage.SelectSortDropdownValue();
+                CartPage.ClickOnCartItemOne();
+                CartPage.AddToCartFirstProduct();
+                CartPage.ClickContinueShoppingButton();
+                CartPage.EnterSearchPhrase(Strings.CartString.ItemSearchPhrase4);
+                CartPage.ClickSearchButton();
+                CartPage.ScrollIntoView();
+                CartPage.ClickOnCartItemTwo();
+                CartPage.AddToCartSecondProduct();
+                CartPage.ClickContinueShoppingButton();
+                CartPage.ClickCartButton();
+                CartPage.RemoveFromCartProduct();
+                CartPage.RemoveFromCartProduct();
 
+                Assert.That(CartPage.GetItemOneName(),
+                    Is.EqualTo(Strings.CartString.CartItemNameOne));
+                Assert.That(CartPage.GetItemTwoName(),
+                    Is.EqualTo(Strings.CartString.CartItemNameTwo));
+            }
+            catch (Exception ex)
+            {
+                CartPage.GetTestFailScreenshot();
+            }
         }
     }
 }
