@@ -1,4 +1,5 @@
 ﻿using SeleniumFramework.Pages.PiguLTPage;
+using System;
 
 namespace SeleniumFramework.Pages.PiguLT
 {
@@ -38,6 +39,35 @@ namespace SeleniumFramework.Pages.PiguLT
         {
             string locator = Locators.AddressPage.InputPhone;
             Common.SendKeysToElement(locator, phoneNumber);
+        }
+        public static void EnterCustomerAddressr(string address)
+        {
+            string locator = Locators.AddressPage.InputAddress;
+            Common.SendKeysToElement(locator, address);
+        }
+
+        public static void EnterCustomerPostCode(string postCode)
+        {
+            string locator = Locators.AddressPage.InputPostCode;
+            Common.SendKeysToElement(locator, postCode);
+        }
+
+        public static void InitializeCityDropdown()
+        {
+            string locator = Locators.AddressPage.SelectCityDropdown;
+            Common.ClickElement(locator);
+        }
+
+        public static void SelectFromCityDropdown()
+        {
+            string locator = Locators.AddressPage.SelectCityDropdownValue;
+            Common.ClickElement(locator);
+        }
+
+        public static void ClickSaveChangesButton()
+        {
+            string locator = Locators.AddressPage.SaveChangesButton;
+            Common.ClickElement(locator);
         }
     }
 }

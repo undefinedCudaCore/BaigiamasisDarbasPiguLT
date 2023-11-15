@@ -30,6 +30,11 @@ namespace SeleniumTests.PiguLT
                     Strings.AddressString.Phone);
                 AddressPage.InitializeCityDropdown();
                 AddressPage.SelectFromCityDropdown();
+                AddressPage.EnterCustomerAddressr(
+                    Strings.AddressString.Address);
+                AddressPage.EnterCustomerPostCode(
+                    Strings.AddressString.PostCode);
+                AddressPage.ClickSaveChangesButton();
             }
             catch (Exception)
             {
