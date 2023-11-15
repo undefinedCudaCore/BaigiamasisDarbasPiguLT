@@ -36,12 +36,13 @@
             internal static string SelectDropdown = "//*[@id='sort_select']";
             internal static string SelectDropdownValue = "//*[@id='sort_selectpd']";
             internal static string FoundItemImage1 = "//*[@id='productBlock60011144']//*/div[3]/a";
-            //internal static string FoundItemImage2 = "//*[@id='productBlock85539811']//*/div[3]/a";
-            internal static string FoundItemImage2 = "//*[@id='productBlock95458132']//*/div[3]/a";
-            internal static string FoundItemImage3 = "";
-            internal static string ProductSidebarButton1 = "//*[@id='product-sidebar']/div[1]/div[4]/div/div[1]";
-            internal static string ProductSidebarButton2 = "//*[@id='product-sidebar']/div[1]/div[5]/div/div[1]";
+            internal static string FoundItemImage2 = "//*[@id='productBlock95458347']//*/div[3]/a";
+            internal static string ProductSidebarButton = "//*[@data-cy='product-page-add-to-cart']";
             internal static string ContinueShoppingButton = "//*[@id='continue']";
+            internal static string CartButton = "//*[@id='cartWidget']";
+            internal static string CartItemOne = "//*[@id='productSliceBlock434950543']/td[2]/div/a";
+            internal static string CartItemTwo = "//*[@id='productSliceBlock434966868']/td[2]/div/a";
+            internal static string CartQuantityValue = "//*[@id='productSliceBlock434950543']/td[4]/div/input";
         }
     }
 }

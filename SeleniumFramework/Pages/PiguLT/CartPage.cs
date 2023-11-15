@@ -33,7 +33,7 @@ namespace SeleniumFramework.Pages.PiguLTPage
 
         public static void AddToCartFirstProduct()
         {
-            string locator = Locators.CartPage.ProductSidebarButton1;
+            string locator = Locators.CartPage.ProductSidebarButton;
             Common.ClickElement(locator);
 
             Common.WaitForSearchInput();
@@ -41,7 +41,9 @@ namespace SeleniumFramework.Pages.PiguLTPage
 
         public static void AddToCartSecondProduct()
         {
-            string locator = Locators.CartPage.ProductSidebarButton2;
+            Common.WaitForSearchInput();
+
+            string locator = Locators.CartPage.ProductSidebarButton;
             Common.ClickElement(locator);
         }
 
@@ -56,6 +58,12 @@ namespace SeleniumFramework.Pages.PiguLTPage
             IWebElement locator = Common.GetElementToScroll(Locators.CartPage.FoundItemImage2);
             Actions actions = new Actions(Driver.GetDriver());
             actions.MoveToElement(locator).Perform();
+        }
+
+        public static void ClickCartButton()
+        {
+            string locator = Locators.CartPage.CartButton;
+            Common.ClickElement(locator);
         }
     }
 }

@@ -51,11 +51,6 @@ namespace SeleniumFramework.Pages
             memoryImage.Save(fileName);
         }
 
-        internal static IWebElement GetElementForJavascriptExecutor(string locator)
-        {
-            return GetElement(locator);
-        }
-
         internal static void WaitForSearchInput()
         {
             Thread.Sleep(3000);

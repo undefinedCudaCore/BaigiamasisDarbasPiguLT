@@ -24,12 +24,15 @@ namespace SeleniumTests.PiguLT
             {
                 Assert.That(WishlistPage.GetWishlistProductName(),
                     Is.EqualTo(Strings.WishlistString.WishlistItem1));
+
+                WishlistPage.ClickAddToWishlistButton();
+
             }
             catch (Exception ex)
             {
                 SearchPage.GetTestFailScreenshot();
 
-                throw;
+                WishlistPage.ClickAddToWishlistButton();
             }
         }
 
@@ -49,7 +52,8 @@ namespace SeleniumTests.PiguLT
             CartPage.ScrollIntoView();
             CartPage.ClickOnCartItemTwo();
             CartPage.AddToCartSecondProduct();
-
+            CartPage.ClickContinueShoppingButton();
+            CartPage.ClickCartButton();
 
         }
     }
