@@ -11,7 +11,7 @@ namespace SeleniumTests.PiguLT
         public void SearchItemInWebShop()
         {
             SearchPage.ClickAllowAllCookies();
-            SearchPage.EnterSearchPhrase(Strings.SearchItemString.ItemSearchPhrase);
+            SearchPage.EnterSearchPhrase(Strings.SearchItemString.ItemSearchPhrase1);
             SearchPage.ClickSearchButton();
             SearchPage.ClickFoundItemImageButton();
             //SearchItemPage.ScrollIntoView();

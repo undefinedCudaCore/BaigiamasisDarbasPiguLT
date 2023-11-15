@@ -27,6 +27,8 @@
         internal class WishlistPage
         {
             internal static string AddToWishlistButton = "//*[@id='productBlock98465129']//*/button";
+            internal static string OpenWishlist = "//*[@id='headeMenu']/li[3]/a";
+            internal static string WishlistProductName = "//*[@id='productBlock98465129']//*/p/a";
         }
     }
 }

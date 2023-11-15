@@ -12,9 +12,15 @@
 
         public class SearchItemString
         {
-            public static string ItemSearchPhrase = "X515EA-BQ1735W";
+            public static string ItemSearchPhrase1 = "X515EA-BQ1735W";
             public static string FoundProductName = "Nešiojamas kompiuteris Asus X515EA-BQ1735W";
             public static string ManufacturerCode = "X515EA-BQ1735W";
+        }
+
+        public class WishlistString
+        {
+            public static string ItemSearchPhrase2 = "pixel 8 pro";
+            public static string WishlistItem1 = "Google Pixel 8 Pro 5G 12/128GB Obsidian GA04798-GB";
         }
     }
 }
