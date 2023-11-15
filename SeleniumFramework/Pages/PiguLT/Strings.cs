@@ -22,5 +22,10 @@
             public static string ItemSearchPhrase2 = "pixel 8 pro";
             public static string WishlistItem1 = "Google Pixel 8 Pro 5G 12/128GB Obsidian GA04798-GB";
         }
+
+        public class CartString
+        {
+            public static string ItemSearchPhrase3 = "intel i-9";
+        }
     }
 }

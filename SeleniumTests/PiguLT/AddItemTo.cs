@@ -5,7 +5,7 @@ using System;
 
 namespace SeleniumTests.PiguLT
 {
-    internal class AddItemToWishlist : BaseTest
+    internal class AddItemTo : BaseTest
     {
         [Test]
         public void AddItemToWishList()
@@ -32,5 +32,15 @@ namespace SeleniumTests.PiguLT
                 throw;
             }
         }
+
+        [Test]
+        public void AddItemToCart()
+        {
+            CartPage.ClickAllowAllCookies();
+            CartPage.EnterSearchPhrase(Strings.CartString.ItemSearchPhrase3);
+            CartPage.ClickSearchButton();
+
+        }
+
     }
 }

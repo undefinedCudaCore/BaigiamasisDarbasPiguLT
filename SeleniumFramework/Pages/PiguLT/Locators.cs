@@ -30,5 +30,10 @@
             internal static string OpenWishlist = "//*[@id='headeMenu']/li[3]/a";
             internal static string WishlistProductName = "//*[@id='productBlock98465129']//*/p/a";
         }
+
+        internal class CartPage
+        {
+            internal static string SelectDropdown = "//*[@id='sort_select']";
+        }
     }
 }
