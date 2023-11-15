@@ -13,6 +13,7 @@
             internal static string EditProfile = "//a[contains(@href, 'u/info')]";
             internal static string MyAccountName = "//*[@id='editMyInfo']/div[2]/div/div[1]";
         }
+
         internal class SearchItemPage
         {
             internal static string AllowCookiesButton = "//*[@id='cookie_block']//*/button[3]";
@@ -33,8 +34,8 @@
 
         internal class CartPage
         {
-            internal static string SelectDropdown = "//*[@id='sort_select']";
-            internal static string SelectDropdownValue = "//*[@id='sort_selectpd']";
+            internal static string SelectProductSortDropdown = "//*[@id='sort_select']";
+            internal static string SelectProductSortDropdownValue = "//*[@id='sort_selectpd']";
             internal static string FoundItemImage1 = "//*[@id='productBlock60011144']//*/div[3]/a";
             internal static string FoundItemImage2 = "//*[@id='productBlock95458347']//*/div[3]/a";
             internal static string ProductSidebarButton = "//*[@data-cy='product-page-add-to-cart']";
@@ -43,6 +44,21 @@
             internal static string CartItemOne = "//*[@id='productSliceBlock434950543']/td[2]/div/a";
             internal static string CartItemTwo = "//*[@id='productSliceBlock434966868']/td[2]/div/a";
             internal static string RemoveItem = "//*[@widget-attachpoint='removeFromCart']";
+        }
+
+        internal class AddressPage
+        {
+            internal static string MyOrders = "//*[@id='headeMenu']/li[1]/div/ul[2]/li/a";
+            internal static string MyAddress = "//*[@href='u/addresses/customers']";
+            internal static string AddAddressButton = "//*[@href='https://pigu.lt/lt/u/customer/add']";
+            internal static string InputName = "//*[@autocomplete='given-name']";
+            internal static string InputLastname = "//*[@autocomplete='family-name']";
+            internal static string InputPhone = "//*[@Name='phone']|//*[@placeholder='Pvz.: +37066105555']";
+            internal static string SelectCityDropdown = "//*[@id='city_idFilter']";
+            internal static string SelectCityDropdownValue = "//*[@id='city_id1']";
+            internal static string InputAddress = "//*[@id='address']";
+            internal static string InputPostCode = "//*[@name='post_code']";
+            internal static string SaveChangesButton = "//*[@id='addressEdit']/form/div[2]/div[6]/a[2]";
         }
     }
 }

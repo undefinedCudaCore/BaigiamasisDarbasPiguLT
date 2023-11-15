@@ -25,7 +25,7 @@ namespace SeleniumTests.PiguLT
                 Assert.That(LoginPage.GetMyAccountName(), 
                     Is.EqualTo(Strings.LoginString.DisplayMyAccountName));
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 LoginPage.GetTestFailScreenshot();
             }

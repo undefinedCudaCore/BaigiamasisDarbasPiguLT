@@ -2,11 +2,6 @@
 {
     public class LoginPage
     {
-        public static void Open()
-        {
-            Driver.OpenPage("https://pigu.lt/lt/");
-        }
-
         public static void ClickOnProfileIcon()
         {
             string locator = Locators.LoginPage.IconProfile;

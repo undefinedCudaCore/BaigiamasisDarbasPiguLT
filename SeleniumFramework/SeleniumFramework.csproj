@@ -58,8 +58,8 @@
   <ItemGroup>
     <Compile Include="Driver.cs" />
     <Compile Include="Pages\Common.cs" />
+    <Compile Include="Pages\PiguLT\AddressPage.cs" />
     <Compile Include="Pages\PiguLT\CartPage.cs" />
-    <Compile Include="Pages\PiguLT\OrderPage.cs" />
     <Compile Include="Pages\PiguLT\Locators.cs" />
     <Compile Include="Pages\PiguLT\LoginPage.cs" />
     <Compile Include="Pages\PiguLT\SearchPage.cs" />

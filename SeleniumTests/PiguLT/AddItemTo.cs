@@ -26,7 +26,7 @@ namespace SeleniumTests.PiguLT
                 Assert.That(WishlistPage.GetWishlistProductName(),
                     Is.EqualTo(Strings.WishlistString.WishlistItem1));
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 WishlistPage.GetTestFailScreenshot();
             }
@@ -52,15 +52,15 @@ namespace SeleniumTests.PiguLT
                 CartPage.AddToCartSecondProduct();
                 CartPage.ClickContinueShoppingButton();
                 CartPage.ClickCartButton();
-                CartPage.RemoveFromCartProduct();
-                CartPage.RemoveFromCartProduct();
+                CartPage.ClickRemoveFromProductFromCart();
+                CartPage.ClickRemoveFromProductFromCart();
 
                 Assert.That(CartPage.GetItemOneName(),
                     Is.EqualTo(Strings.CartString.CartItemNameOne));
                 Assert.That(CartPage.GetItemTwoName(),
                     Is.EqualTo(Strings.CartString.CartItemNameTwo));
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 CartPage.GetTestFailScreenshot();
             }

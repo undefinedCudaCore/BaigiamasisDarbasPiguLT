@@ -23,7 +23,7 @@ namespace SeleniumTests.PiguLT
                 Assert.That(SearchPage.ProductManufacturerCode(), 
                     Is.EqualTo(Strings.SearchItemString.ManufacturerCode));
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 SearchPage.GetTestFailScreenshot();
             }

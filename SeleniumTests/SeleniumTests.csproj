@@ -62,7 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseTests\BaseTest.cs" />
-    <Compile Include="PiguLT\CheckOrderStatus.cs" />
+    <Compile Include="PiguLT\AddAddress.cs" />
     <Compile Include="PiguLT\LoginToPage.cs" />
     <Compile Include="PiguLT\SearchForItem.cs" />
     <Compile Include="PiguLT\AddItemTo.cs" />

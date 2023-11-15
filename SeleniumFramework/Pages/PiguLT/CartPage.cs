@@ -7,13 +7,13 @@ namespace SeleniumFramework.Pages.PiguLTPage
     {
         public static void SelectSortDropdown()
         {
-            string locator = Locators.CartPage.SelectDropdown;
+            string locator = Locators.CartPage.SelectProductSortDropdown;
             Common.ClickElement(locator);
         }
 
         public static void SelectSortDropdownValue()
         {
-            string locator = Locators.CartPage.SelectDropdownValue;
+            string locator = Locators.CartPage.SelectProductSortDropdownValue;
             Common.ClickElement(locator);
         }
 
@@ -47,7 +47,7 @@ namespace SeleniumFramework.Pages.PiguLTPage
             Common.WaitForElement();
         }
 
-        public static void RemoveFromCartProduct()
+        public static void ClickRemoveFromProductFromCart()
         {
             Common.WaitForElement();
 
