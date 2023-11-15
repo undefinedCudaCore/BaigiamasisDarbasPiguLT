@@ -39,8 +39,18 @@ namespace SeleniumTests.PiguLT
             CartPage.ClickAllowAllCookies();
             CartPage.EnterSearchPhrase(Strings.CartString.ItemSearchPhrase3);
             CartPage.ClickSearchButton();
+            CartPage.SelectSortDropdown();
+            CartPage.SelectSortDropdownValue();
+            CartPage.ClickOnCartItemOne();
+            CartPage.AddToCartFirstProduct();
+            CartPage.ClickContinueShoppingButton();
+            CartPage.EnterSearchPhrase(Strings.CartString.ItemSearchPhrase4);
+            CartPage.ClickSearchButton();
+            CartPage.ScrollIntoView();
+            CartPage.ClickOnCartItemTwo();
+            CartPage.AddToCartSecondProduct();
+
 
         }
-
     }
 }

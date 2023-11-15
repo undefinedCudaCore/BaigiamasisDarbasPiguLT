@@ -10,8 +10,9 @@
 
         public static void EnterSearchPhrase(string searchPhrase)
         {
+            Common.WaitForSearchInput();
+
             string locator = Locators.SearchItemPage.InputSearch;
-            Common.WaitForSearchInput(locator);
             Common.SendKeysToElement(locator, searchPhrase);
         }
 
@@ -26,12 +27,6 @@
             string locator = Locators.SearchItemPage.FoundItemImgButton;
             Common.ClickElement(locator);
         }
-
-        //public static void ScrollIntoView()
-        //{
-        //    string locator = Locators.SearchItemPage.MoreInformationButton;
-        //    ((IJavaScriptExecutor)Driver.GetDriver()).ExecuteScript("arguments[0].scrollIntoView(true);", Common.GetElementForJavascriptExecutor(locator));
-        //}
 
         public static void ClickMoreInformationButton()
         {

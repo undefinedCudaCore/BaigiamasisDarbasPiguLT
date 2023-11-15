@@ -26,6 +26,7 @@
         public class CartString
         {
             public static string ItemSearchPhrase3 = "intel i-9";
+            public static string ItemSearchPhrase4 = "AMD ryzen 9";
         }
     }
 }

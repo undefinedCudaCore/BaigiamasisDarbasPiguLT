@@ -14,7 +14,6 @@ namespace SeleniumTests.PiguLT
             SearchPage.EnterSearchPhrase(Strings.SearchItemString.ItemSearchPhrase1);
             SearchPage.ClickSearchButton();
             SearchPage.ClickFoundItemImageButton();
-            //SearchItemPage.ScrollIntoView();
             SearchPage.ClickMoreInformationButton();
 
             try

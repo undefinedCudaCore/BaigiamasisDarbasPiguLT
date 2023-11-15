@@ -14,6 +14,11 @@ namespace SeleniumFramework.Pages
             return Driver.GetDriver().FindElement(By.XPath(locator));
         }
 
+        public static IWebElement GetElementToScroll(string locator)
+        {
+            return GetElement(locator);
+        }
+
         internal static void ClickElement(string locator)
         {
             GetElement(locator).Click();
@@ -51,7 +56,7 @@ namespace SeleniumFramework.Pages
             return GetElement(locator);
         }
 
-        internal static void WaitForSearchInput(string locator)
+        internal static void WaitForSearchInput()
         {
             Thread.Sleep(3000);
         }
