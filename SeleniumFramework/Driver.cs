@@ -7,7 +7,7 @@ using OpenQA.Selenium.Support.UI;
 
 namespace SeleniumFramework
 {
-    public class Driver
+    internal class Driver
     {
         internal static IWebDriver driver;
 
