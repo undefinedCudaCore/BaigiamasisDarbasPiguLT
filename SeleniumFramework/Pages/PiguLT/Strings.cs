@@ -37,7 +37,7 @@
             public static string LastName = "Karibidis";
             public static string Phone = "+37066105589";
             public static string Address = "Testo g. 12";
-            public static string PostCode = "LT-03642";
+            public static string PostCode = "03642";
         }
     }
 }

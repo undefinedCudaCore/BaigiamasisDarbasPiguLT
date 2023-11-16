@@ -44,9 +44,9 @@
             return Common.GetElementText(Locators.SearchItemPage.ProductManufactureCode);
         }
 
-        public static void GetTestFailScreenshot()
-        {
-            Common.TakeScreenshot();
-        }
+        //public static void GetTestFailScreenshot()
+        //{
+        //    Common.TakeScreenshot();
+        //}
     }
 }

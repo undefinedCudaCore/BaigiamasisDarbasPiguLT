@@ -4,6 +4,8 @@
     {
         public static void ClickOnProfileIcon()
         {
+            Common.WaitForElement();
+
             string locator = Locators.LoginPage.IconProfile;
             Common.ClickElement(locator);
         }
@@ -49,9 +51,9 @@
             return Common.GetElementText(Locators.LoginPage.MyAccountName);
         }
 
-        public static void GetTestFailScreenshot()
-        {
-            Common.TakeScreenshot();
-        }
+        //public static void GetTestFailScreenshot()
+        //{
+        //    Common.TakeScreenshot();
+        //}
     }
 }

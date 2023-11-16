@@ -32,23 +32,6 @@ namespace SeleniumFramework.Pages
             return GetElement(locator).Text;
         }
 
-        internal static void TakeScreenshot()
-        {
-            Bitmap memoryImage;
-            memoryImage = new Bitmap(1800, 1500);
-            Size size = new Size(memoryImage.Width, memoryImage.Height);
-
-            Graphics memoryGraphics = Graphics.FromImage(memoryImage);
-
-            memoryGraphics.CopyFromScreen(0, 0, 0, 0, size);
-
-            string fileName = string.Format(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) +
-                                      @"\Screenshot" + "_" +
-                                             DateTime.Now.ToString("dd_MMMM_hh_mm_ss_tt") + ".png");
-
-            memoryImage.Save(fileName);
-        }
-
         internal static void WaitForElement()
         {
             Thread.Sleep(3000);

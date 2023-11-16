@@ -10,23 +10,16 @@ namespace SeleniumTests.PiguLT
         [Test]
         public void SearchItemInWebShop()
         {
-            try
-            {
-                SearchPage.ClickAllowAllCookies();
-                SearchPage.EnterSearchPhrase(Strings.SearchItemString.ItemSearchPhrase1);
-                SearchPage.ClickSearchButton();
-                SearchPage.ClickFoundItemImageButton();
-                SearchPage.ClickMoreInformationButton();
+            SearchPage.ClickAllowAllCookies();
+            SearchPage.EnterSearchPhrase(Strings.SearchItemString.ItemSearchPhrase1);
+            SearchPage.ClickSearchButton();
+            SearchPage.ClickFoundItemImageButton();
+            SearchPage.ClickMoreInformationButton();
 
-                Assert.That(SearchPage.GetProductName(), 
-                    Is.EqualTo(Strings.SearchItemString.FoundProductName));
-                Assert.That(SearchPage.ProductManufacturerCode(), 
+            Assert.That(SearchPage.GetProductName(), 
+                Is.EqualTo(Strings.SearchItemString.FoundProductName));
+            Assert.That(SearchPage.ProductManufacturerCode(), 
                     Is.EqualTo(Strings.SearchItemString.ManufacturerCode));
-            }
-            catch (Exception)
-            {
-                SearchPage.GetTestFailScreenshot();
-            }
         }
     }
 }
