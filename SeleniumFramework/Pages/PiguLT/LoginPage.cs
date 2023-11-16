@@ -2,6 +2,12 @@
 {
     public class LoginPage
     {
+        public static void ClickAllowAllCookies()
+        {
+            string locator = Locators.LoginPage.AllowCookiesButton;
+            Common.ClickElement(locator);
+        }
+
         public static void ClickOnProfileIcon()
         {
             Common.WaitForElement();

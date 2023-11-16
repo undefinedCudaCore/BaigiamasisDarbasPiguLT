@@ -10,11 +10,6 @@ namespace SeleniumTests.PiguLT
         [Test]
         public void AddItemToWishList()
         {
-            LoginPage.ClickOnProfileIcon();
-            LoginPage.ClickOnBlueLoginButton();
-            LoginPage.EnterLoginEmail(Strings.LoginString.InputEmail1);
-            LoginPage.EnterLoginPassword(Strings.LoginString.InputPassword);
-            LoginPage.ClickOnGreenLoginButton();
             SearchPage.EnterSearchPhrase(Strings.WishlistString.ItemSearchPhrase2);
             SearchPage.ClickSearchButton();
             WishlistPage.ClickAddToWishlistButton();
@@ -28,13 +23,6 @@ namespace SeleniumTests.PiguLT
         [Test]
         public void AddItemToCart()
         {
-            SearchPage.ClickAllowAllCookies();
-            //LoginPage.ClickOnProfileIcon();
-            //LoginPage.ClickOnBlueLoginButton();
-            //LoginPage.EnterLoginEmail(Strings.LoginString.InputEmail1);
-            //LoginPage.EnterLoginPassword(Strings.LoginString.InputPassword);
-            //LoginPage.ClickOnGreenLoginButton();
-
             SearchPage.EnterSearchPhrase(Strings.CartString.ItemSearchPhrase3);
             SearchPage.ClickSearchButton();
             CartPage.SelectSortDropdown();

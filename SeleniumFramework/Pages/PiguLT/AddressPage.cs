@@ -72,7 +72,10 @@ namespace SeleniumFramework.Pages.PiguLT
 
         public static string GetAddress()
         {
-            return Common.GetElementText(Locators.AddressPage.SavedAddress);
+            string locator = Locators.AddressPage.SavedAddress;
+            Common.WaitForElementToBeVisible(locator);
+
+            return Common.GetElementText(locator);
         }
     }
 }

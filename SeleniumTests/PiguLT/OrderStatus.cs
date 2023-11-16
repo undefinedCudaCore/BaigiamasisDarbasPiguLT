@@ -10,13 +10,6 @@ namespace SeleniumTests.PiguLT
         [Test]
         public void OrderStatucCheck()
         {
-            SearchPage.ClickAllowAllCookies();
-            LoginPage.ClickOnProfileIcon();
-            LoginPage.ClickOnBlueLoginButton();
-            LoginPage.EnterLoginEmail(Strings.LoginString.InputEmail1);
-            LoginPage.EnterLoginPassword(Strings.LoginString.InputPassword);
-            LoginPage.ClickOnGreenLoginButton();
-
             OrderPage.ClickInformationButton();
             OrderPage.ClickTrackOrderButton();
             OrderPage.ClickSelectOrderDropdown();

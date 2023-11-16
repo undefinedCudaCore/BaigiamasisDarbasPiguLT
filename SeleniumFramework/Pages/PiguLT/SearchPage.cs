@@ -2,12 +2,6 @@
 {
     public class SearchPage
     {
-        public static void ClickAllowAllCookies()
-        {
-            string locator = Locators.SearchItemPage.AllowCookiesButton;
-            Common.ClickElement(locator);
-        }
-
         public static void EnterSearchPhrase(string searchPhrase)
         {
             Common.WaitForElement();

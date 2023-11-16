@@ -11,12 +11,6 @@ namespace SeleniumTests.PiguLT
         [Test]
         public void CheckAddressInformation()
         {
-            SearchPage.ClickAllowAllCookies();
-            LoginPage.ClickOnProfileIcon();
-            LoginPage.ClickOnBlueLoginButton();
-            LoginPage.EnterLoginEmail(Strings.LoginString.InputEmail2);
-            LoginPage.EnterLoginPassword(Strings.LoginString.InputPassword);
-            LoginPage.ClickOnGreenLoginButton();
             LoginPage.ClickOnProfileIcon(); // gal perkelti i common, pasikartoja
             AddressPage.ClickOnMyOrders();
             AddressPage.ClickOnMyAddress();

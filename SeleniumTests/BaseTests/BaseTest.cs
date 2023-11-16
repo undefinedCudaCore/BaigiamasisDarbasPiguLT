@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using NUnit.Framework.Interfaces;
 using SeleniumFramework;
+using SeleniumFramework.Pages.PiguLTPage;
 
 namespace SeleniumTests.BaseTests
 {
@@ -12,6 +13,14 @@ namespace SeleniumTests.BaseTests
             Driver.InitializeDriver();
             Driver.OpenPage("https://pigu.lt/lt/");
             Driver.MaximizeWindow();
+
+            //Login to page
+            LoginPage.ClickAllowAllCookies();
+            LoginPage.ClickOnProfileIcon();
+            LoginPage.ClickOnBlueLoginButton();
+            LoginPage.EnterLoginEmail(Strings.LoginString.InputEmail2);
+            LoginPage.EnterLoginPassword(Strings.LoginString.InputPassword);
+            LoginPage.ClickOnGreenLoginButton();
         }
 
         [TearDown]

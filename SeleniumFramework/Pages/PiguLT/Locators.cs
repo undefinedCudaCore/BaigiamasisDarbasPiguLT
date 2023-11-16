@@ -12,11 +12,11 @@
             internal static string MyAccount = "//*[@id='headeMenu']/li[1]/div/ul[1]/li/a";
             internal static string EditProfile = "//a[contains(@href, 'u/info')]";
             internal static string MyAccountName = "//*[@id='editMyInfo']/div[2]/div/div[1]";
+            internal static string AllowCookiesButton = "//*[@id='cookie_block']//*/button[3]";
         }
 
         internal class SearchItemPage
         {
-            internal static string AllowCookiesButton = "//*[@id='cookie_block']//*/button[3]";
             internal static string InputSearch = "//*[@id='searchInput']";
             internal static string InputSearchButton = "//*[@id='main-search-form']/button[2]";
             internal static string FoundItemImgButton = "//*[@id='productBlock95591527']/div/div/div[3]/a";
@@ -58,7 +58,7 @@
             internal static string InputAddress = "//*[@id='address']";
             internal static string InputPostCode = "//*[@name='post_code']";
             internal static string SaveChangesButton = "//*[@id='addressEdit']/form/div[2]/div[6]/a[2]";
-            internal static string SavedAddress = "//*[@id='address27797013']//*/p[1]";
+            internal static string SavedAddress = "//*[@id='address27798088']/div/div[4]/div[2]/div/p[1]";
         }
 
         internal class OrderPage
