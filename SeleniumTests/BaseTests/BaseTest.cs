@@ -2,6 +2,7 @@
 using NUnit.Framework.Interfaces;
 using SeleniumFramework;
 using SeleniumFramework.Pages.PiguLTPage;
+using SeleniumTests.PiguLT;
 
 namespace SeleniumTests.BaseTests
 {
@@ -18,8 +19,8 @@ namespace SeleniumTests.BaseTests
             LoginPage.ClickAllowAllCookies();
             LoginPage.ClickOnProfileIcon();
             LoginPage.ClickOnBlueLoginButton();
-            LoginPage.EnterLoginEmail(Strings.LoginString.InputEmail2);
-            LoginPage.EnterLoginPassword(Strings.LoginString.InputPassword);
+            LoginPage.EnterLoginEmail(LoginToPage.LoginTestData.InputEmail1);
+            LoginPage.EnterLoginPassword(LoginToPage.LoginTestData.InputPassword);
             LoginPage.ClickOnGreenLoginButton();
         }
 

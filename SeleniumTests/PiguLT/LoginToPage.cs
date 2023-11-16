@@ -6,8 +6,16 @@ namespace SeleniumTests.PiguLT
 {
     internal class LoginToPage : BaseTest
     {
+        public class LoginTestData
+        {
+            public static string InputEmail1 = "testforgraduationthesis@gmail.com";
+            public static string InputEmail2 = "duationthetestforgraduat@gmail.com";
+            public static string InputPassword = "seleniumtestforgraduationthesis";
+            public static string DisplayMyAccountName = "Graduation Thesis";
+        }
+
         //[Test]
-        
+
         //If you want to test only the login functionality of a page functionality,
         //          you must comment on the login methods in the BaseTest class and uncomment the test annotation.
         public void LoginToWebShopAccount()
@@ -15,8 +23,8 @@ namespace SeleniumTests.PiguLT
             LoginPage.ClickAllowAllCookies();
             LoginPage.ClickOnProfileIcon();
             LoginPage.ClickOnBlueLoginButton();
-            LoginPage.EnterLoginEmail(Strings.LoginString.InputEmail1);
-            LoginPage.EnterLoginPassword(Strings.LoginString.InputPassword);
+            LoginPage.EnterLoginEmail(LoginTestData.InputEmail1);
+            LoginPage.EnterLoginPassword(LoginTestData.InputPassword);
             LoginPage.ClickOnGreenLoginButton();
             LoginPage.ClickOnProfileIcon();
             LoginPage.ClickOnMyAccount();
@@ -24,7 +32,7 @@ namespace SeleniumTests.PiguLT
             LoginPage.GetMyAccountName();
 
             Assert.That(LoginPage.GetMyAccountName(), 
-                    Is.EqualTo(Strings.LoginString.DisplayMyAccountName));
+                    Is.EqualTo(LoginTestData.DisplayMyAccountName));
         }
     }
 }
