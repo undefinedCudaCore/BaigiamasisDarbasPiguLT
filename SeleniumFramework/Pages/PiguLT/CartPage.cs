@@ -6,7 +6,6 @@ namespace SeleniumFramework.Pages.PiguLTPage
     public class CartPage
     {
         public static string itemOne;
-        public static string itemTwo;
 
         public static void SelectSortDropdown()
         {
@@ -39,7 +38,7 @@ namespace SeleniumFramework.Pages.PiguLTPage
             string locator = Locators.CartPage.ProductSidebarButton;
             Common.ClickElement(locator);
 
-            Common.WaitForElement();
+            Common.WaitForElementToBeVisible(locator);
         }
 
         public static void AddToCartSecondProduct()
@@ -47,7 +46,7 @@ namespace SeleniumFramework.Pages.PiguLTPage
             string locator = Locators.CartPage.ProductSidebarButton;
             Common.ClickElement(locator);
 
-            Common.WaitForElement();
+            Common.WaitForElementToBeVisible(locator);
         }
 
         public static void ClickRemoveFromProductFromCart()
@@ -61,6 +60,8 @@ namespace SeleniumFramework.Pages.PiguLTPage
         public static void ClickContinueShoppingButton()
         {
             string locator = Locators.CartPage.ContinueShoppingButton;
+            
+            Common.WaitForElementToBeVisible(locator);
             Common.ClickElement(locator);
         }
 
