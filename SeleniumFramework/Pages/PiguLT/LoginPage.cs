@@ -50,10 +50,5 @@
         {
             return Common.GetElementText(Locators.LoginPage.MyAccountName);
         }
-
-        //public static void GetTestFailScreenshot()
-        //{
-        //    Common.TakeScreenshot();
-        //}
     }
 }

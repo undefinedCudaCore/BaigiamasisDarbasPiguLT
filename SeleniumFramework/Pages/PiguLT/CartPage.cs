@@ -3,8 +3,11 @@ using OpenQA.Selenium.Interactions;
 
 namespace SeleniumFramework.Pages.PiguLTPage
 {
-    public class CartPage : SearchPage
+    public class CartPage
     {
+        public static string itemOne;
+        public static string itemTwo;
+
         public static void SelectSortDropdown()
         {
             string locator = Locators.CartPage.SelectProductSortDropdown;
@@ -78,9 +81,13 @@ namespace SeleniumFramework.Pages.PiguLTPage
         {
             return Common.GetElementText(Locators.CartPage.CartItemOne);
         }
-        public static string GetItemTwoName()
+
+        public static string ItemOneNameForAssert()
         {
-            return Common.GetElementText(Locators.CartPage.CartItemTwo);
+            Common.WaitForElement();
+
+            itemOne = GetItemOneName();
+            return itemOne;
         }
     }
 }

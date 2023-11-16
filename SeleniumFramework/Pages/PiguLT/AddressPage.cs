@@ -3,7 +3,7 @@ using System;
 
 namespace SeleniumFramework.Pages.PiguLT
 {
-    public class AddressPage : LoginPage
+    public class AddressPage
     {
         public static void ClickOnMyOrders()
         {
@@ -68,6 +68,11 @@ namespace SeleniumFramework.Pages.PiguLT
         {
             string locator = Locators.AddressPage.SaveChangesButton;
             Common.ClickElement(locator);
+        }
+
+        public static string GetAddress()
+        {
+            return Common.GetElementText(Locators.AddressPage.SavedAddress);
         }
     }
 }

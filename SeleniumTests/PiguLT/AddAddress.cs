@@ -14,27 +14,25 @@ namespace SeleniumTests.PiguLT
             SearchPage.ClickAllowAllCookies();
             LoginPage.ClickOnProfileIcon();
             LoginPage.ClickOnBlueLoginButton();
-            LoginPage.EnterLoginEmail(Strings.LoginString.InputEmail1);
+            LoginPage.EnterLoginEmail(Strings.LoginString.InputEmail2);
             LoginPage.EnterLoginPassword(Strings.LoginString.InputPassword);
             LoginPage.ClickOnGreenLoginButton();
             LoginPage.ClickOnProfileIcon(); // gal perkelti i common, pasikartoja
             AddressPage.ClickOnMyOrders();
             AddressPage.ClickOnMyAddress();
             AddressPage.ClickAddAddressButton();
-            AddressPage.EnterCustomerName(
-                        Strings.AddressString.Name);
-            AddressPage.EnterCustomerLastName(
-                        Strings.AddressString.LastName);
-            AddressPage.EnterCustomerPhoneNumber(
-                        Strings.AddressString.Phone);
+            AddressPage.EnterCustomerName(Strings.AddressString.Name);
+            AddressPage.EnterCustomerLastName(Strings.AddressString.LastName);
+            AddressPage.EnterCustomerPhoneNumber(Strings.AddressString.Phone);
             AddressPage.InitializeCityDropdown();
             AddressPage.SelectFromCityDropdown();
-            AddressPage.EnterCustomerAddressr(
-                        Strings.AddressString.Address);
-            AddressPage.EnterCustomerPostCode(
-                        Strings.AddressString.PostCode);
+            AddressPage.EnterCustomerAddressr(Strings.AddressString.Address);
+            AddressPage.EnterCustomerPostCode(Strings.AddressString.PostCode);
             AddressPage.ClickSaveChangesButton();
-        }
 
+            Assert.That(AddressPage.GetAddress(),
+            Is.EqualTo(Strings.AddressString.AccountAddress));
+
+        }
     }
 }

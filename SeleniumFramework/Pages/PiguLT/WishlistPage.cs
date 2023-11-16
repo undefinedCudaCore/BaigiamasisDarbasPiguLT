@@ -1,6 +1,6 @@
 ﻿namespace SeleniumFramework.Pages.PiguLTPage
 {
-    public class WishlistPage : SearchPage
+    public class WishlistPage
     {
         public static void ClickAddToWishlistButton()
         {

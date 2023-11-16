@@ -27,7 +27,7 @@
 
         internal class WishlistPage
         {
-            internal static string AddToWishlistButton = "//*[@id='productBlock98465129']//*/button";
+            internal static string AddToWishlistButton = "//*[@id='productBlock98465129']/div/div/div[2]/div/div/button";
             internal static string OpenWishlist = "//*[@id='headeMenu']/li[3]/a";
             internal static string WishlistProductName = "//*[@id='productBlock98465129']//*/p/a";
         }
@@ -41,8 +41,7 @@
             internal static string ProductSidebarButton = "//*[@data-cy='product-page-add-to-cart']";
             internal static string ContinueShoppingButton = "//*[@id='continue']";
             internal static string CartButton = "//*[@id='cartWidget']";
-            internal static string CartItemOne = "//*[@id='productSliceBlock434950543']/td[2]/div/a";
-            internal static string CartItemTwo = "//*[@id='productSliceBlock434966868']/td[2]/div/a";
+            internal static string CartItemOne = "//*[@href='https://pigu.lt/lt/parduotuve/katarata-uab']";
             internal static string RemoveItem = "//*[@widget-attachpoint='removeFromCart']";
         }
 
@@ -59,6 +58,7 @@
             internal static string InputAddress = "//*[@id='address']";
             internal static string InputPostCode = "//*[@name='post_code']";
             internal static string SaveChangesButton = "//*[@id='addressEdit']/form/div[2]/div[6]/a[2]";
+            internal static string SavedAddress = "//*[@id='address27797013']//*/p[1]";
         }
     }
 }
