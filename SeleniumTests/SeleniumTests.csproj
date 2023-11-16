@@ -64,6 +64,7 @@
     <Compile Include="BaseTests\BaseTest.cs" />
     <Compile Include="PiguLT\AddAddress.cs" />
     <Compile Include="PiguLT\LoginToPage.cs" />
+    <Compile Include="PiguLT\OrderStatus.cs" />
     <Compile Include="PiguLT\SearchForItem.cs" />
     <Compile Include="PiguLT\AddItemTo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

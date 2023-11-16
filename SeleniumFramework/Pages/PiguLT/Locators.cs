@@ -60,5 +60,14 @@
             internal static string SaveChangesButton = "//*[@id='addressEdit']/form/div[2]/div[6]/a[2]";
             internal static string SavedAddress = "//*[@id='address27797013']//*/p[1]";
         }
+
+        internal class OrderPage
+        {
+            internal static string Information = "//*[@id='header-observe']/div[2]/div/ul/li[2]/a";
+            internal static string TrackOrder = "//*[@id='header-observe']/div[2]/div/ul/li[2]/div/ul[2]/li/div/span/a";
+            internal static string SelectOrderDropdown = "//*[@id='orderListSort']/div[1]";
+            internal static string SelectOrderDropdownValue = "//*[@id='orderListSortList']/ul/li[2]";
+            internal static string OrderInformation = "//*[@id='ordersList']/div[3]/div/div";
+        }
     }
 }

@@ -33,6 +33,8 @@ namespace SeleniumTests.PiguLT
             //LoginPage.ClickOnBlueLoginButton();
             //LoginPage.EnterLoginEmail(Strings.LoginString.InputEmail1);
             //LoginPage.EnterLoginPassword(Strings.LoginString.InputPassword);
+            //LoginPage.ClickOnGreenLoginButton();
+
             SearchPage.EnterSearchPhrase(Strings.CartString.ItemSearchPhrase3);
             SearchPage.ClickSearchButton();
             CartPage.SelectSortDropdown();

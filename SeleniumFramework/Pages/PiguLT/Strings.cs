@@ -40,5 +40,10 @@
             public static string PostCode = "03642";
             public static string AccountAddress = "Testo g. 12, 03642, Vilnius";
         }
+
+        public class OrderString
+        {
+            public static string OrderStatus = "Užsakymų nėra.";
+        }
     }
 }
