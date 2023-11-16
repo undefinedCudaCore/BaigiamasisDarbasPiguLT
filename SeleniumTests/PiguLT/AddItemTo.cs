@@ -1,7 +1,6 @@
 ﻿using NUnit.Framework;
 using SeleniumFramework.Pages.PiguLTPage;
 using SeleniumTests.BaseTests;
-using System;
 
 namespace SeleniumTests.PiguLT
 {
@@ -16,8 +15,7 @@ namespace SeleniumTests.PiguLT
             WishlistPage.OpenWishlistButton();
             WishlistPage.ClickAddToWishlistButton();
 
-            Assert.That(WishlistPage.GetWishlistProductName(),
-                    Is.EqualTo(Strings.WishlistString.WishlistItem1));
+            Assert.That(WishlistPage.GetWishlistProductName(), Is.EqualTo(Strings.WishlistString.WishlistItem1));
         }
 
         [Test]
@@ -41,8 +39,7 @@ namespace SeleniumTests.PiguLT
             CartPage.ClickRemoveFromProductFromCart();
             CartPage.ClickRemoveFromProductFromCart();
 
-            Assert.That(CartPage.itemOne,
-                        Is.EqualTo(Strings.CartString.CartItemNameOne));
+            Assert.That(CartPage.itemOne, Is.EqualTo(Strings.CartString.CartItemNameOne));
         }
     }
 }

@@ -2,7 +2,6 @@
 using SeleniumFramework.Pages.PiguLT;
 using SeleniumFramework.Pages.PiguLTPage;
 using SeleniumTests.BaseTests;
-using System;
 
 namespace SeleniumTests.PiguLT
 {
@@ -11,7 +10,7 @@ namespace SeleniumTests.PiguLT
         [Test]
         public void CheckAddressInformation()
         {
-            LoginPage.ClickOnProfileIcon(); // gal perkelti i common, pasikartoja
+            LoginPage.ClickOnProfileIcon();
             AddressPage.ClickOnMyOrders();
             AddressPage.ClickOnMyAddress();
             AddressPage.ClickAddAddressButton();
@@ -24,9 +23,7 @@ namespace SeleniumTests.PiguLT
             AddressPage.EnterCustomerPostCode(Strings.AddressString.PostCode);
             AddressPage.ClickSaveChangesButton();
 
-            Assert.That(AddressPage.GetAddress(),
-            Is.EqualTo(Strings.AddressString.AccountAddress));
-
+            Assert.That(AddressPage.GetAddress(), Is.EqualTo(Strings.AddressString.AccountAddress));
         }
     }
 }

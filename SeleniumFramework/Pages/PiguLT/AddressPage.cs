@@ -1,5 +1,4 @@
 ﻿using SeleniumFramework.Pages.PiguLTPage;
-using System;
 
 namespace SeleniumFramework.Pages.PiguLT
 {

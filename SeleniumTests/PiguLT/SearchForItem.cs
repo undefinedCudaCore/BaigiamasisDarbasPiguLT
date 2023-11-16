@@ -1,7 +1,6 @@
 ﻿using NUnit.Framework;
 using SeleniumFramework.Pages.PiguLTPage;
 using SeleniumTests.BaseTests;
-using System;
 
 namespace SeleniumTests.PiguLT
 {
@@ -15,10 +14,8 @@ namespace SeleniumTests.PiguLT
             SearchPage.ClickFoundItemImageButton();
             SearchPage.ClickMoreInformationButton();
 
-            Assert.That(SearchPage.GetProductName(), 
-                Is.EqualTo(Strings.SearchItemString.FoundProductName));
-            Assert.That(SearchPage.ProductManufacturerCode(), 
-                    Is.EqualTo(Strings.SearchItemString.ManufacturerCode));
+            Assert.That(SearchPage.GetProductName(), Is.EqualTo(Strings.SearchItemString.FoundProductName));
+            Assert.That(SearchPage.ProductManufacturerCode(), Is.EqualTo(Strings.SearchItemString.ManufacturerCode));
         }
     }
 }

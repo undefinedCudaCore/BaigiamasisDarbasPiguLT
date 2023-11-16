@@ -1,9 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using System.Drawing.Imaging;
 using System;
-using System.Runtime;
-using OpenQA.Selenium.Support.UI;
 using System.Drawing;
 
 namespace SeleniumFramework

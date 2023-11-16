@@ -1,9 +1,6 @@
 ﻿using NUnit.Framework;
-using NUnit.Framework.Internal;
 using SeleniumFramework.Pages.PiguLTPage;
 using SeleniumTests.BaseTests;
-using System;
-using System.Xml.Linq;
 
 namespace SeleniumTests.PiguLT
 {

@@ -58,7 +58,8 @@
             internal static string InputAddress = "//*[@id='address']";
             internal static string InputPostCode = "//*[@name='post_code']";
             internal static string SaveChangesButton = "//*[@id='addressEdit']/form/div[2]/div[6]/a[2]";
-            internal static string SavedAddress = "//*[@id='address27798088']/div/div[4]/div[2]/div/p[1]";
+            //internal static string SavedAddress = "//*[@id='address27798088']/div/div[4]/div[2]/div/p[1]";
+            internal static string SavedAddress = "//*[@id='address27798668']/div/div[4]/div[2]/div/p[1]";
         }
 
         internal class OrderPage

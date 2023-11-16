@@ -18,6 +18,5 @@
         {
             return Common.GetElementText(Locators.WishlistPage.WishlistProductName);
         }
-
     }
 }
