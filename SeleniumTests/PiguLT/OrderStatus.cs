@@ -7,11 +7,6 @@ namespace SeleniumTests.PiguLT
 {
     internal class OrderStatus : BaseTest
     {
-        internal class OrderTestData
-        {
-            public static string OrderStatus = "Užsakymų nėra.";
-        }
-
         [Test]
         public void OrderStatucCheck()
         {
@@ -20,7 +15,7 @@ namespace SeleniumTests.PiguLT
             OrderPage.ClickSelectOrderDropdown();
             OrderPage.ClickSelectOrderDropdownValue();
 
-            Assert.That(OrderPage.GetOrderStatus(), Is.EqualTo(OrderTestData.OrderStatus));
+            Assert.That(OrderPage.GetOrderStatus(), Is.EqualTo(Strings.OrderString.OrderStatus));
         }
     }
 }

@@ -64,6 +64,7 @@
     <Compile Include="Pages\PiguLT\LoginPage.cs" />
     <Compile Include="Pages\PiguLT\OrderPage.cs" />
     <Compile Include="Pages\PiguLT\SearchPage.cs" />
+    <Compile Include="Pages\PiguLT\Strings.cs" />
     <Compile Include="Pages\PiguLT\WishlistPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
