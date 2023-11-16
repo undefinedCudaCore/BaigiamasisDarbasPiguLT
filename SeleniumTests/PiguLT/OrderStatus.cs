@@ -15,7 +15,7 @@ namespace SeleniumTests.PiguLT
             OrderPage.ClickSelectOrderDropdown();
             OrderPage.ClickSelectOrderDropdownValue();
 
-            Assert.That(OrderPage.GetOrderStatus(), Is.EqualTo(Strings.OrderString.OrderStatus));
+            Assert.That(OrderPage.GetOrderStatus(), Is.EqualTo(TestData.Order.OrderStatus));
         }
     }
 }

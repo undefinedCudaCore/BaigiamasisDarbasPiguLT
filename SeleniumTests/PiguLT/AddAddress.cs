@@ -14,16 +14,16 @@ namespace SeleniumTests.PiguLT
             AddressPage.ClickOnMyOrders();
             AddressPage.ClickOnMyAddress();
             AddressPage.ClickAddAddressButton();
-            AddressPage.EnterCustomerName(Strings.AddressString.Name);
-            AddressPage.EnterCustomerLastName(Strings.AddressString.LastName);
-            AddressPage.EnterCustomerPhoneNumber(Strings.AddressString.Phone);
+            AddressPage.EnterCustomerName(TestData.Address.NameText);
+            AddressPage.EnterCustomerLastName(TestData.Address.LastNameText);
+            AddressPage.EnterCustomerPhoneNumber(TestData.Address.PhoneText);
             AddressPage.InitializeCityDropdown();
             AddressPage.SelectFromCityDropdown();
-            AddressPage.EnterCustomerAddressr(Strings.AddressString.Address);
-            AddressPage.EnterCustomerPostCode(Strings.AddressString.PostCode);
+            AddressPage.EnterCustomerAddressr(TestData.Address.AddressText);
+            AddressPage.EnterCustomerPostCode(TestData.Address.PostCodeText);
             AddressPage.ClickSaveChangesButton();
 
-            Assert.That(AddressPage.GetAddress(), Is.EqualTo(Strings.AddressString.AccountAddress));
+            Assert.That(AddressPage.GetAddress(), Is.EqualTo(TestData.Address.AccountAddress));
         }
     }
 }

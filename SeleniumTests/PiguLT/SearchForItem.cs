@@ -9,13 +9,13 @@ namespace SeleniumTests.PiguLT
         [Test]
         public void SearchItemInWebShop()
         {
-            SearchPage.EnterSearchPhrase(Strings.SearchItemString.ItemSearchPhrase1);
+            SearchPage.EnterSearchPhrase(TestData.SearchItem.ItemSearchPhrase1);
             SearchPage.ClickSearchButton();
             SearchPage.ClickFoundItemImageButton();
             SearchPage.ClickMoreInformationButton();
 
-            Assert.That(SearchPage.GetProductName(), Is.EqualTo(Strings.SearchItemString.FoundProductName));
-            Assert.That(SearchPage.ProductManufacturerCode(), Is.EqualTo(Strings.SearchItemString.ManufacturerCode));
+            Assert.That(SearchPage.GetProductName(), Is.EqualTo(TestData.SearchItem.FoundProductName));
+            Assert.That(SearchPage.ProductManufacturerCode(), Is.EqualTo(TestData.SearchItem.ManufacturerCode));
         }
     }
 }

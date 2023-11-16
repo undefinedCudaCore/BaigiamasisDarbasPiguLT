@@ -9,26 +9,26 @@ namespace SeleniumTests.PiguLT
         [Test]
         public void AddItemToWishList()
         {
-            SearchPage.EnterSearchPhrase(Strings.WishlistString.ItemSearchPhrase2);
+            SearchPage.EnterSearchPhrase(TestData.Wishlist.ItemSearchPhrase2);
             SearchPage.ClickSearchButton();
             WishlistPage.ClickAddToWishlistButton();
             WishlistPage.OpenWishlistButton();
             WishlistPage.ClickAddToWishlistButton();
 
-            Assert.That(WishlistPage.GetWishlistProductName(), Is.EqualTo(Strings.WishlistString.WishlistItem1));
+            Assert.That(WishlistPage.GetWishlistProductName(), Is.EqualTo(TestData.Wishlist.WishlistItem1));
         }
 
         [Test]
         public void AddItemToCart()
         {
-            SearchPage.EnterSearchPhrase(Strings.CartString.ItemSearchPhrase3);
+            SearchPage.EnterSearchPhrase(TestData.Cart.ItemSearchPhrase3);
             SearchPage.ClickSearchButton();
             CartPage.SelectSortDropdown();
             CartPage.SelectSortDropdownValue();
             CartPage.ClickOnCartItemOne();
             CartPage.AddToCartFirstProduct();
             CartPage.ClickContinueShoppingButton();
-            SearchPage.EnterSearchPhrase(Strings.CartString.ItemSearchPhrase4);
+            SearchPage.EnterSearchPhrase(TestData.Cart.ItemSearchPhrase4);
             SearchPage.ClickSearchButton();
             CartPage.ScrollIntoView();
             CartPage.ClickOnCartItemTwo();
@@ -39,7 +39,7 @@ namespace SeleniumTests.PiguLT
             CartPage.ClickRemoveFromProductFromCart();
             CartPage.ClickRemoveFromProductFromCart();
 
-            Assert.That(CartPage.itemOne, Is.EqualTo(Strings.CartString.CartItemNameOne));
+            Assert.That(CartPage.itemOne, Is.EqualTo(TestData.Cart.CartItemNameOne));
         }
     }
 }

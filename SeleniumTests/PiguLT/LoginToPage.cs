@@ -15,8 +15,8 @@ namespace SeleniumTests.PiguLT
             LoginPage.ClickAllowAllCookies();
             LoginPage.ClickOnProfileIcon();
             LoginPage.ClickOnBlueLoginButton();
-            LoginPage.EnterLoginEmail(Strings.LoginString.InputEmail1);
-            LoginPage.EnterLoginPassword(Strings.LoginString.InputPassword);
+            LoginPage.EnterLoginEmail(TestData.Login.InputEmail1);
+            LoginPage.EnterLoginPassword(TestData.Login.InputPassword);
             LoginPage.ClickOnGreenLoginButton();
             LoginPage.ClickOnProfileIcon();
             LoginPage.ClickOnMyAccount();
@@ -24,7 +24,7 @@ namespace SeleniumTests.PiguLT
             LoginPage.GetMyAccountName();
 
             Assert.That(LoginPage.GetMyAccountName(), 
-                    Is.EqualTo(Strings.LoginString.DisplayMyAccountName));
+                    Is.EqualTo(TestData.Login.DisplayMyAccountName));
         }
     }
 }
