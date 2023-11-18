@@ -27,8 +27,8 @@
         {
             public static string ItemSearchPhrase3 = "intel i-9";
             public static string ItemSearchPhrase4 = "AMD ryzen 9";
-            public static string CartItemNameOne = "Katarata, UAB";
-            public static string CartItemNameTwo = "PC GAMER";
+            public static string CartFirstItemName = "Katarata, UAB";
+            public static string CartSecondItemName = "PC GAMER";
         }
 
         public class Address

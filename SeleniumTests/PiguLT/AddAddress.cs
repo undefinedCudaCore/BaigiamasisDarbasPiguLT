@@ -11,15 +11,15 @@ namespace SeleniumTests.PiguLT
         public void CheckAddressInformation()
         {
             LoginPage.ClickOnProfileIcon();
-            AddressPage.ClickOnMyOrders();
-            AddressPage.ClickOnMyAddress();
-            AddressPage.ClickAddAddressButton();
+            AddressPage.ClickOnMyAccount();
+            AddressPage.ClickOnDeliveryAddress();
+            AddressPage.ClickAddNewAddressButton();
             AddressPage.EnterCustomerName(TestData.Address.NameText);
             AddressPage.EnterCustomerLastName(TestData.Address.LastNameText);
             AddressPage.EnterCustomerPhoneNumber(TestData.Address.PhoneText);
-            AddressPage.InitializeCityDropdown();
+            AddressPage.ClickCityDropdown();
             AddressPage.SelectFromCityDropdown();
-            AddressPage.EnterCustomerAddressr(TestData.Address.AddressText);
+            AddressPage.EnterCustomerAddress(TestData.Address.AddressText);
             AddressPage.EnterCustomerPostCode(TestData.Address.PostCodeText);
             AddressPage.ClickSaveChangesButton();
 

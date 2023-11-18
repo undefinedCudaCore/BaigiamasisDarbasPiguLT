@@ -34,7 +34,7 @@
 
         internal class CartPage
         {
-            internal static string SelectProductSortDropdown = "//*[@id='sort_select']";
+            internal static string SelectSortDropdown = "//*[@id='sort_select']";
             internal static string SelectProductSortDropdownValue = "//*[@id='sort_selectpd']";
             internal static string FoundItemImage1 = "//*[@id='productBlock60011144']//*/div[3]/a";
             internal static string FoundItemImage2 = "//*[@id='productBlock95458347']//*/div[3]/a";
@@ -42,14 +42,15 @@
             internal static string ContinueShoppingButton = "//*[@id='continue']";
             internal static string CartButton = "//*[@id='cartWidget']";
             internal static string CartItemOne = "//*[@href='https://pigu.lt/lt/parduotuve/katarata-uab']";
+            internal static string CartItemTwo = "//*[@href='https://pigu.lt/lt/parduotuve/pc-gamer']";
             internal static string RemoveItem = "//*[@widget-attachpoint='removeFromCart']";
         }
 
         internal class AddressPage
         {
-            internal static string MyOrders = "//*[@id='headeMenu']/li[1]/div/ul[2]/li/a";
-            internal static string MyAddress = "//*[@href='u/addresses/customers']";
-            internal static string AddAddressButton = "//*[@href='https://pigu.lt/lt/u/customer/add']";
+            internal static string MyAccount = "//*[@id='headeMenu']/li[1]/a";
+            internal static string DeliveryAddress = "//*[@href='u/addresses/customers']";
+            internal static string AddNewAddressButton = "//*[@href='https://pigu.lt/lt/u/customer/add']";
             internal static string InputName = "//*[@autocomplete='given-name']";
             internal static string InputLastname = "//*[@autocomplete='family-name']";
             internal static string InputPhone = "//*[@Name='phone']|//*[@placeholder='Pvz.: +37066105555']";

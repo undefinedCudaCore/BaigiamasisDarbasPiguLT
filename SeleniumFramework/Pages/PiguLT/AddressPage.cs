@@ -4,21 +4,21 @@ namespace SeleniumFramework.Pages.PiguLT
 {
     public class AddressPage
     {
-        public static void ClickOnMyOrders()
+        public static void ClickOnMyAccount()
         {
-            string locator = Locators.AddressPage.MyOrders;
+            string locator = Locators.AddressPage.MyAccount;
             Common.ClickElement(locator);
         }
 
-        public static void ClickOnMyAddress()
+        public static void ClickOnDeliveryAddress()
         {
-            string locator = Locators.AddressPage.MyAddress;
+            string locator = Locators.AddressPage.DeliveryAddress;
             Common.ClickElement(locator);
         }
 
-        public static void ClickAddAddressButton()
+        public static void ClickAddNewAddressButton()
         {
-            string locator = Locators.AddressPage.AddAddressButton;
+            string locator = Locators.AddressPage.AddNewAddressButton;
             Common.ClickElement(locator);
         }
 
@@ -39,7 +39,7 @@ namespace SeleniumFramework.Pages.PiguLT
             string locator = Locators.AddressPage.InputPhone;
             Common.SendKeysToElement(locator, phoneNumber);
         }
-        public static void EnterCustomerAddressr(string address)
+        public static void EnterCustomerAddress(string address)
         {
             string locator = Locators.AddressPage.InputAddress;
             Common.SendKeysToElement(locator, address);
@@ -51,7 +51,7 @@ namespace SeleniumFramework.Pages.PiguLT
             Common.SendKeysToElement(locator, postCode);
         }
 
-        public static void InitializeCityDropdown()
+        public static void ClickCityDropdown()
         {
             string locator = Locators.AddressPage.SelectCityDropdown;
             Common.ClickElement(locator);

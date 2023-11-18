@@ -19,27 +19,34 @@ namespace SeleniumTests.PiguLT
         }
 
         [Test]
-        public void AddItemToCart()
+        public void AddFirstItemToCart()
         {
             SearchPage.EnterSearchPhrase(TestData.Cart.ItemSearchPhrase3);
             SearchPage.ClickSearchButton();
-            CartPage.SelectSortDropdown();
+            CartPage.ClickSortDropdown();
             CartPage.SelectSortDropdownValue();
-            CartPage.ClickOnCartItemOne();
+            CartPage.ClickOnCartItemImegaOne();
             CartPage.AddToCartFirstProduct();
             CartPage.ClickContinueShoppingButton();
+            CartPage.ClickCartButtonFirstTime();
+            CartPage.ClickRemoveFromProductFromCart();
+
+            Assert.That(CartPage.cartFirstItem, Is.EqualTo(TestData.Cart.CartFirstItemName));
+        }
+
+        [Test]
+        public void AddSecondItemToCart()
+        {
             SearchPage.EnterSearchPhrase(TestData.Cart.ItemSearchPhrase4);
             SearchPage.ClickSearchButton();
             CartPage.ScrollIntoView();
-            CartPage.ClickOnCartItemTwo();
+            CartPage.ClickOnCartItemImageTwo();
             CartPage.AddToCartSecondProduct();
             CartPage.ClickContinueShoppingButton();
-            CartPage.ClickCartButton();
-            CartPage.ItemOneNameForAssert();
-            CartPage.ClickRemoveFromProductFromCart();
+            CartPage.ClickCartButtonSecondTime();
             CartPage.ClickRemoveFromProductFromCart();
 
-            Assert.That(CartPage.itemOne, Is.EqualTo(TestData.Cart.CartItemNameOne));
+            Assert.That(CartPage.cartSecondItem, Is.EqualTo(TestData.Cart.CartSecondItemName));
         }
     }
 }

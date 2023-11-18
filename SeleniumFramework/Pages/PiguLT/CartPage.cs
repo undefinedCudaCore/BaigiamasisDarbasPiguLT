@@ -5,11 +5,12 @@ namespace SeleniumFramework.Pages.PiguLTPage
 {
     public class CartPage
     {
-        public static string itemOne;
+        public static string cartFirstItem;
+        public static string cartSecondItem;
 
-        public static void SelectSortDropdown()
+        public static void ClickSortDropdown()
         {
-            string locator = Locators.CartPage.SelectProductSortDropdown;
+            string locator = Locators.CartPage.SelectSortDropdown;
             Common.ClickElement(locator);
         }
 
@@ -19,7 +20,7 @@ namespace SeleniumFramework.Pages.PiguLTPage
             Common.ClickElement(locator);
         }
 
-        public static void ClickOnCartItemOne()
+        public static void ClickOnCartItemImegaOne()
         {
             Common.WaitForElement();
 
@@ -27,7 +28,7 @@ namespace SeleniumFramework.Pages.PiguLTPage
             Common.ClickElement(locator);
         }
 
-        public static void ClickOnCartItemTwo()
+        public static void ClickOnCartItemImageTwo()
         {
             string locator = Locators.CartPage.FoundItemImage2;
             Common.ClickElement(locator);
@@ -72,23 +73,46 @@ namespace SeleniumFramework.Pages.PiguLTPage
             actions.MoveToElement(locator).Perform();
         }
 
-        public static void ClickCartButton()
+        public static void ClickCartButtonFirstTime()
         {
             string locator = Locators.CartPage.CartButton;
             Common.ClickElement(locator);
+
+            FirstItemNameForAssert();
         }
 
-        public static string GetItemOneName()
+        public static void ClickCartButtonSecondTime()
+        {
+            string locator = Locators.CartPage.CartButton;
+            Common.ClickElement(locator);
+
+            SecondItemNameForAssert();
+        }
+
+        public static string GetFirstItemName()
         {
             return Common.GetElementText(Locators.CartPage.CartItemOne);
         }
+        
+        public static string GetSecondItemName()
+        {
+            return Common.GetElementText(Locators.CartPage.CartItemTwo);
+        }
 
-        public static string ItemOneNameForAssert()
+        public static string FirstItemNameForAssert()
         {
             Common.WaitForElement();
 
-            itemOne = GetItemOneName();
-            return itemOne;
+            cartFirstItem = GetFirstItemName();
+            return cartFirstItem;
+        }
+
+        public static string SecondItemNameForAssert()
+        {
+            Common.WaitForElement();
+
+            cartSecondItem = GetSecondItemName();
+            return cartSecondItem;
         }
     }
 }
