@@ -10,28 +10,24 @@ namespace SeleniumFramework.Pages.PiguLTPage
 
         public static void ClickSortDropdown()
         {
-            string locator = Locators.CartPage.SelectSortDropdown;
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.CartPage.SelectSortDropdown);
         }
 
         public static void SelectSortDropdownValue()
         {
-            string locator = Locators.CartPage.SelectProductSortDropdownValue;
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.CartPage.SelectProductSortDropdownValue);
         }
 
         public static void ClickOnCartItemImegaOne()
         {
             Common.WaitForElement();
 
-            string locator = Locators.CartPage.FoundItemImage1;
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.CartPage.FoundItemImage1);
         }
 
         public static void ClickOnCartItemImageTwo()
         {
-            string locator = Locators.CartPage.FoundItemImage2;
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.CartPage.FoundItemImage2);
         }
 
         public static void AddToCartFirstProduct()
@@ -54,8 +50,7 @@ namespace SeleniumFramework.Pages.PiguLTPage
         {
             Common.WaitForElement();
 
-            string locator = Locators.CartPage.RemoveItem;
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.CartPage.RemoveItem);
         }
 
         public static void ClickContinueShoppingButton()
@@ -75,16 +70,14 @@ namespace SeleniumFramework.Pages.PiguLTPage
 
         public static void ClickCartButtonFirstTime()
         {
-            string locator = Locators.CartPage.CartButton;
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.CartPage.CartButton);
 
             FirstItemNameForAssert();
         }
 
         public static void ClickCartButtonSecondTime()
         {
-            string locator = Locators.CartPage.CartButton;
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.CartPage.CartButton);
 
             SecondItemNameForAssert();
         }
