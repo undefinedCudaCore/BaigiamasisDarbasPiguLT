@@ -6,6 +6,8 @@
         {
             public static string InputEmail1 = "testforgraduationthesis@gmail.com";
             public static string InputEmail2 = "duationthetestforgraduat@gmail.com";
+            public static string InputEmail3 = "duationthetestforgraduat2@gmail.com";
+            public static string InputEmail4 = "tomgrizluy@gmail.com";
             public static string InputPassword = "seleniumtestforgraduationthesis";
             public static string DisplayMyAccountName = "Graduation Thesis";
         }

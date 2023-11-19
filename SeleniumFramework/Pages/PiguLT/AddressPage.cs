@@ -4,8 +4,12 @@ namespace SeleniumFramework.Pages.PiguLT
 {
     public class AddressPage
     {
+        public static string firstAddress;
+
         public static void ClickOnMyAccount()
         {
+            Common.WaitForElement();
+
             string locator = Locators.AddressPage.MyAccount;
             Common.ClickElement(locator);
         }
@@ -20,6 +24,20 @@ namespace SeleniumFramework.Pages.PiguLT
         {
             string locator = Locators.AddressPage.AddNewAddressButton;
             Common.ClickElement(locator);
+        }
+
+        public static void ClickAddressTrashIcon()
+        {
+            FirstItemNameForAssert();
+
+            Common.WaitForElement();
+            Common.ClickElement(Locators.AddressPage.AddressTrashIcon);
+        }
+
+        public static void ClickRemoveAddress()
+        {
+            Common.WaitForElementToBeVisible(Locators.AddressPage.RemoveAddressButton);
+            Common.ClickElement(Locators.AddressPage.RemoveAddressButton);
         }
 
         public static void EnterCustomerName(string name)
@@ -75,6 +93,14 @@ namespace SeleniumFramework.Pages.PiguLT
             Common.WaitForElementToBeVisible(locator);
 
             return Common.GetElementText(locator);
+        }
+
+        public static string FirstItemNameForAssert()
+        {
+            Common.WaitForElement();
+
+            firstAddress = GetAddress();
+            return firstAddress;
         }
     }
 }

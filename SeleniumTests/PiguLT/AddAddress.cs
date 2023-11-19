@@ -22,8 +22,10 @@ namespace SeleniumTests.PiguLT
             AddressPage.EnterCustomerAddress(TestData.Address.AddressText);
             AddressPage.EnterCustomerPostCode(TestData.Address.PostCodeText);
             AddressPage.ClickSaveChangesButton();
+            AddressPage.ClickAddressTrashIcon();
+            AddressPage.ClickRemoveAddress();
 
-            Assert.That(AddressPage.GetAddress(), Is.EqualTo(TestData.Address.AccountAddress));
+            Assert.That(AddressPage.firstAddress, Is.EqualTo(TestData.Address.AccountAddress));
         }
     }
 }
