@@ -18,7 +18,7 @@ namespace SeleniumTests.BaseTests
             LoginPage.ClickAllowAllCookies();
             LoginPage.ClickOnProfileIcon();
             LoginPage.ClickOnBlueLoginButton();
-            LoginPage.EnterLoginEmail(TestData.Login.InputEmail4);
+            LoginPage.EnterLoginEmail(TestData.Login.InputEmail2);
             LoginPage.EnterLoginPassword(TestData.Login.InputPassword);
             LoginPage.ClickOnGreenLoginButton();
         }

@@ -6,26 +6,22 @@ namespace SeleniumFramework.Pages.PiguLT
     {
         public static void ClickInformationButton()
         {
-            string locator = Locators.OrderPage.Information;
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.OrderPage.Information);
         }
 
         public static void ClickTrackOrderButton()
         {
-            string locator = Locators.OrderPage.TrackOrder;
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.OrderPage.TrackOrder);
         }
 
         public static void ClickSelectOrderDropdown()
         {
-            string locator = Locators.OrderPage.SelectOrderDropdown;
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.OrderPage.SelectOrderDropdown);
         }
 
         public static void ClickSelectOrderDropdownValue()
         {
-            string locator = Locators.OrderPage.SelectOrderDropdownValue;
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.OrderPage.SelectOrderDropdownValue);
         }
 
         public static string GetOrderStatus()
