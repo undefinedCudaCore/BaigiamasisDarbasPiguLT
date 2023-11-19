@@ -8,7 +8,7 @@ namespace SeleniumTests.PiguLT
     internal class AddAddress : BaseTest
     {
         [Test]
-        public void CheckAddressInformation()
+        public void CheckAddAddressInformation()
         {
             LoginPage.ClickOnProfileIcon();
             AddressPage.ClickOnMyAccount();
@@ -23,7 +23,7 @@ namespace SeleniumTests.PiguLT
             AddressPage.EnterCustomerPostCode(TestData.Address.PostCodeText);
             AddressPage.ClickSaveChangesButton();
             AddressPage.ClickAddressTrashIcon();
-            AddressPage.ClickRemoveAddress();
+            AddressPage.ClickDeleteAddress();
 
             Assert.That(AddressPage.firstAddress, Is.EqualTo(TestData.Address.AccountAddress));
         }

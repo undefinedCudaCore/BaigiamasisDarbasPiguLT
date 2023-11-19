@@ -31,7 +31,7 @@ namespace SeleniumFramework.Pages.PiguLT
             Common.ClickElement(Locators.AddressPage.AddressTrashIcon);
         }
 
-        public static void ClickRemoveAddress()
+        public static void ClickDeleteAddress()
         {
             Common.WaitForElementToBeVisible(Locators.AddressPage.RemoveAddressButton);
             Common.ClickElement(Locators.AddressPage.RemoveAddressButton);

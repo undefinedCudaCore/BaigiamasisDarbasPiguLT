@@ -19,6 +19,8 @@
 			◶ Enter the customer address
 			◶ Enter the customer's post code
 			◶ Click on the "Save changes" button
+			◶ Click on the "Trash bin" icon to remove address
+			◶ Click on the "Delete" button
 
 	Test case 2:
 	■ Add to cart or wishlist a specific product searched on the product list page
