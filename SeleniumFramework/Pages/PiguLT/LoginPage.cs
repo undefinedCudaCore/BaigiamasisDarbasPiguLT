@@ -4,52 +4,44 @@
     {
         public static void ClickAllowAllCookies()
         {
-            string locator = Locators.LoginPage.AllowCookiesButton;
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.LoginPage.AllowCookiesButton);
         }
 
         public static void ClickOnProfileIcon()
         {
             Common.WaitForElement();
 
-            string locator = Locators.LoginPage.IconProfile;
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.LoginPage.IconProfile);
         }
 
         public static void ClickOnBlueLoginButton()
         {
-            string locator = Locators.LoginPage.BlueLoginButton;
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.LoginPage.BlueLoginButton);
         }
 
         public static void EnterLoginEmail(string loginEmail)
         {
-            string locator = Locators.LoginPage.InputEmail;
-            Common.SendKeysToElement(locator, loginEmail);
+            Common.SendKeysToElement(Locators.LoginPage.InputEmail, loginEmail);
         }
 
         public static void EnterLoginPassword(string loginPassword)
         {
-            string locator = Locators.LoginPage.InputPassword;
-            Common.SendKeysToElement(locator, loginPassword);
+            Common.SendKeysToElement(Locators.LoginPage.InputPassword, loginPassword);
         }
 
         public static void ClickOnGreenLoginButton()
         {
-            string locator = Locators.LoginPage.GreenLoginButton;
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.LoginPage.GreenLoginButton);
         }
 
         public static void ClickOnMyAccount()
         {
-            string locator = Locators.LoginPage.MyAccount;
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.LoginPage.MyAccount);
         }
 
         public static void ClickOnEditProfile()
         {
-            string locator = Locators.LoginPage.EditProfile;
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.LoginPage.EditProfile);
         }
 
         public static string GetMyAccountName()

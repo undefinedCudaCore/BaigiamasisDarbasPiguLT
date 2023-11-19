@@ -7,7 +7,7 @@ namespace SeleniumTests.PiguLT
     internal class LoginToPage : BaseTest
     {
         //[Test]
-        
+
         //If you want to test only the login functionality of a page functionality,
         //          you must comment on the login methods in the BaseTest class and uncomment the test annotation.
         public void LoginToWebShopAccount()
@@ -23,8 +23,7 @@ namespace SeleniumTests.PiguLT
             LoginPage.ClickOnEditProfile();
             LoginPage.GetMyAccountName();
 
-            Assert.That(LoginPage.GetMyAccountName(), 
-                    Is.EqualTo(TestData.Login.DisplayMyAccountName));
+            Assert.That(LoginPage.GetMyAccountName(), Is.EqualTo(TestData.Login.DisplayMyAccountName));
         }
     }
 }
