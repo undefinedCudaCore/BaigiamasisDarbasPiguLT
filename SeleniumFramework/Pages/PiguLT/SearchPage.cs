@@ -6,26 +6,22 @@
         {
             Common.WaitForElement();
 
-            string locator = Locators.SearchItemPage.InputSearch;
-            Common.SendKeysToElement(locator, searchPhrase);
+            Common.SendKeysToElement(Locators.SearchItemPage.InputSearch, searchPhrase);
         }
 
         public static void ClickSearchButton()
         {
-            string locator = Locators.SearchItemPage.InputSearchButton;
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.SearchItemPage.InputSearchButton);
         }
 
         public static void ClickFoundItemImageButton()
         {
-            string locator = Locators.SearchItemPage.FoundItemImgButton;
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.SearchItemPage.FoundItemImgButton);
         }
 
         public static void ClickMoreInformationButton()
         {
-            string locator = Locators.SearchItemPage.MoreInformationButton;
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.SearchItemPage.MoreInformationButton);
         }
 
         public static string GetProductName()
