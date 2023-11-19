@@ -59,7 +59,7 @@
             internal static string InputAddress = "//*[@id='address']";
             internal static string InputPostCode = "//*[@name='post_code']";
             internal static string SaveChangesButton = "//*[@id='addressEdit']/form/div[2]/div[6]/a[2]";
-            internal static string SavedAddress = "//*[@id='addressList']/ul/div/div/li[2]/div/div/div[2]/div/p";
+            internal static string SavedAddress = "//*[@id='addressList']/ul/div/div/li/div[1]/div[4]/div[2]/div/p";
             internal static string AddressTrashIcon = "//*[@id='addressList']/ul/div/div/li[2]/div/div[3]/a[2]";
             internal static string RemoveAddressButton = "//*[@id='modal']/div/div/div/div[2]/div/div[2]/div/div[2]/div/div[2]/a";
         }

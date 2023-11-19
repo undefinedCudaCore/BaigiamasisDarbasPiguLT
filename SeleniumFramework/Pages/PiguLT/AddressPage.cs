@@ -10,20 +10,17 @@ namespace SeleniumFramework.Pages.PiguLT
         {
             Common.WaitForElement();
 
-            string locator = Locators.AddressPage.MyAccount;
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.AddressPage.MyAccount);
         }
 
         public static void ClickOnDeliveryAddress()
         {
-            string locator = Locators.AddressPage.DeliveryAddress;
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.AddressPage.DeliveryAddress);
         }
 
         public static void ClickAddNewAddressButton()
         {
-            string locator = Locators.AddressPage.AddNewAddressButton;
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.AddressPage.AddNewAddressButton);
         }
 
         public static void ClickAddressTrashIcon()
@@ -42,57 +39,48 @@ namespace SeleniumFramework.Pages.PiguLT
 
         public static void EnterCustomerName(string name)
         {
-            string locator = Locators.AddressPage.InputName;
-            Common.SendKeysToElement(locator, name);
+            Common.SendKeysToElement(Locators.AddressPage.InputName, name);
         }
 
         public static void EnterCustomerLastName(string lastName)
         {
-            string locator = Locators.AddressPage.InputLastname;
-            Common.SendKeysToElement(locator, lastName);
+            Common.SendKeysToElement(Locators.AddressPage.InputLastname, lastName);
         }
 
         public static void EnterCustomerPhoneNumber(string phoneNumber)
         {
-            string locator = Locators.AddressPage.InputPhone;
-            Common.SendKeysToElement(locator, phoneNumber);
+            Common.SendKeysToElement(Locators.AddressPage.InputPhone, phoneNumber);
         }
         public static void EnterCustomerAddress(string address)
         {
-            string locator = Locators.AddressPage.InputAddress;
-            Common.SendKeysToElement(locator, address);
+            Common.SendKeysToElement(Locators.AddressPage.InputAddress, address);
         }
 
         public static void EnterCustomerPostCode(string postCode)
         {
-            string locator = Locators.AddressPage.InputPostCode;
-            Common.SendKeysToElement(locator, postCode);
+            Common.SendKeysToElement(Locators.AddressPage.InputPostCode, postCode);
         }
 
         public static void ClickCityDropdown()
         {
-            string locator = Locators.AddressPage.SelectCityDropdown;
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.AddressPage.SelectCityDropdown);
         }
 
         public static void SelectFromCityDropdown()
         {
-            string locator = Locators.AddressPage.SelectCityDropdownValue;
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.AddressPage.SelectCityDropdownValue);
         }
 
         public static void ClickSaveChangesButton()
         {
-            string locator = Locators.AddressPage.SaveChangesButton;
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.AddressPage.SaveChangesButton);
         }
 
         public static string GetAddress()
         {
-            string locator = Locators.AddressPage.SavedAddress;
-            Common.WaitForElementToBeVisible(locator);
+            Common.WaitForElementToBeVisible(Locators.AddressPage.SavedAddress);
 
-            return Common.GetElementText(locator);
+            return Common.GetElementText(Locators.AddressPage.SavedAddress);
         }
 
         public static string FirstItemNameForAssert()
