@@ -4,14 +4,12 @@
     {
         public static void ClickAddToWishlistButton()
         {
-            string locator = Locators.WishlistPage.AddToWishlistButton;
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.WishlistPage.AddToWishlistButton);
         }
 
         public static void OpenWishlistButton()
         {
-            string locator = Locators.WishlistPage.OpenWishlist;
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.WishlistPage.OpenWishlist);
         }
 
         public static string GetWishlistProductName()
