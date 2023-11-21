@@ -37,7 +37,7 @@
 			◶ Click on the wishlist button to open the wishlist page
 			◶ Click on the "Add to wishlist " button to remove an item from the wishlist
 
-*Test scenario 2.1 expected result: Add seached item to wishlist.*
+*Test scenario 2.1 expected result: Add a searched item to your wishlist.*
 
 		Test scenario 2.2:
 		◉ Add the first item to the cart 
@@ -52,7 +52,7 @@
 			◶ Click the "Continue Shopping" button when it appears in the popup
 			◶ Click the cart button to enter the cart page
 
-*Test scenario 2.2 expected result: Add seached item to cart.*
+*Test scenario 2.2 expected result: Add the searched item to the cart.*
 
 		Test scenario 2.3:
 		◉ Add a second item to the cart 
@@ -68,7 +68,7 @@
 			◶ Click on the remove from cart button for the first item
 			◶ Click on the remove from cart button for the second item
 	
-*Test scenario 2.3 expected result: Add more than one seached item to the cart.*
+*Test scenario 2.3 expected result: Add more than one searched item to the cart.*
 
 	Test case 3:
 	■ Possibility to see pending orders in "My orders"
