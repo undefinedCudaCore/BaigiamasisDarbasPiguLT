@@ -101,4 +101,6 @@ _**<h3>Test case 4:</h3>**_
 
 *Test scenario 4.1 expected result: Check if a specific product is found using the webpage search.*
 
+_**<h6> -------------------------------------------------------------------------------------------------------------------------------------------------------</h6>**_
 ![I'm Tester!](https://www.svgheart.com/wp-content/uploads/2021/11/official-cookie-tester-funny-christmas-free-svg-file-SvgHeart.Com.png)
+_**<h6> -------------------------------------------------------------------------------------------------------------------------------------------------------</h6>**_
