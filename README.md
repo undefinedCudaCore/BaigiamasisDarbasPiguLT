@@ -1,7 +1,10 @@
 ﻿## Tested WebPage *[Pigu.LT 🛒](https://www.pigu.lt/)*.
 
-	Test case 1:
-	■ Possibility to enter and save a user's delivery address
+_**<h6> ----------------------------------------------------------------------------------------------------------------------------------------</h6>**_
+
+
+_**<h3>Test case 1:</h3>**_
+	_**■ Possibility to enter and save a user's delivery address**_
 
 		Test scenario 1.1:
 		◉ Add a delivery address
@@ -23,9 +26,9 @@
 			◶ Click on the "Delete" button
 
 *Test scenario 1.1 expected result: Assigning a delivery address to the user account.*
-
-	Test case 2:
-	■ Add to cart or wishlist a specific product searched on the product list page
+_**<h6> ----------------------------------------------------------------------------------------------------------------------------------------</h6>**_
+_**<h3>Test case 2:</h3>**_
+	_**■ Add to cart or wishlist a specific product searched on the product list page**_
 
 		Test scenario 2.1:
 		◉ Add item to the wishlist page 
@@ -70,8 +73,9 @@
 	
 *Test scenario 2.3 expected result: Add more than one searched item to the cart.*
 
-	Test case 3:
-	■ Possibility to see pending orders in "My orders"
+_**<h6> ----------------------------------------------------------------------------------------------------------------------------------------</h6>**_
+_**<h3>Test case 3:</h3>**_
+	_**■ Possibility to see pending orders in "My orders"**_
 
 		Test scenario 3.1:
 		◉ Check if there are no orders in "My orders"
@@ -84,8 +88,9 @@
 
 *Test scenario 3.1 expected result: If there are no orders, check whether the executed orders are not displayed.*
 
-	Test case 4:
-	■ Search for specific products in the page product list
+_**<h6> ----------------------------------------------------------------------------------------------------------------------------------------</h6>**_
+_**<h3>Test case 4:</h3>**_
+	_**■ Search for specific products in the page product list**_
 
 		Test scenario 4.1:
 		◉ Search for the selected item
