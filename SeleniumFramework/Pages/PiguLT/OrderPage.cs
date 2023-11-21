@@ -1,6 +1,4 @@
-﻿using SeleniumFramework.Pages.PiguLTPage;
-
-namespace SeleniumFramework.Pages.PiguLT
+﻿namespace SeleniumFramework.Pages.PiguLTPage
 {
     public class OrderPage
     {
