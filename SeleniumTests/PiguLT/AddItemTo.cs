@@ -29,7 +29,6 @@ namespace SeleniumTests.PiguLT
             CartPage.AddToCartFirstProduct();
             CartPage.ClickContinueShoppingButton();
             CartPage.ClickCartButtonFirstTime();
-            CartPage.ClickRemoveFromProductFromCart();
 
             Assert.That(CartPage.cartFirstItem, Is.EqualTo(TestData.Cart.CartFirstItemName));
         }
@@ -44,6 +43,7 @@ namespace SeleniumTests.PiguLT
             CartPage.AddToCartSecondProduct();
             CartPage.ClickContinueShoppingButton();
             CartPage.ClickCartButtonSecondTime();
+            CartPage.ClickRemoveFromProductFromCart();
             CartPage.ClickRemoveFromProductFromCart();
 
             Assert.That(CartPage.cartSecondItem, Is.EqualTo(TestData.Cart.CartSecondItemName));
