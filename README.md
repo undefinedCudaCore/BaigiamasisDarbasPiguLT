@@ -26,7 +26,7 @@ _**<h3>Test case 1:</h3>**_
 			◶ Click on the "Delete" button
 
 *Test scenario 1.1 expected result: Assigning a delivery address to the user account.*
-_**<h6> ------------------------------------------------------------------------------------------------------------------------------------------------------</h6>**_
+_**<h6> -----------------------------------------------------------------------------------------------------------------------------------------------------------</h6>**_
 _**<h3>Test case 2:</h3>**_
 	_**■ Add to cart or wishlist a specific product searched on the product list page**_
 
