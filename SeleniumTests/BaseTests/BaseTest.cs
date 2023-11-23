@@ -14,7 +14,9 @@ namespace SeleniumTests.BaseTests
             Driver.OpenPage("https://pigu.lt/lt/");
             Driver.MaximizeWindow();
 
-            //Login to page
+            // Login to page
+            // If you get the error "Too many logins, please try later." when trying to login, change the "EnterLoginEmail" variable. Select one from four:
+            // InputEmail1; InputEmail2; InputEmail3; InputEmail4;
             LoginPage.ClickAllowAllCookies();
             LoginPage.ClickOnProfileIcon();
             LoginPage.ClickOnBlueLoginButton();

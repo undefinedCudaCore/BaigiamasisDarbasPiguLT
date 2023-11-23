@@ -8,8 +8,9 @@ namespace SeleniumTests.PiguLT
     {
         //[Test]
 
-        //If you want to test only the login functionality of a page functionality,
+        // If you want to test only the login functionality of a page functionality,
         //          you must comment on the login methods in the BaseTest class and uncomment the test annotation.
+        // LoginToPage test passes only with "InputEmail1" variable indicated in the "EnterLoginEmail" method.
         public void LoginToWebShopAccount()
         {
             LoginPage.ClickAllowAllCookies();
