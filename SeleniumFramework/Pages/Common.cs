@@ -89,5 +89,21 @@ namespace SeleniumFramework.Pages
                 }
             }
         }
+
+        internal static void WaitForElementToNotExist(string locator)
+        {
+            while (true)
+            {
+                try
+                {
+                    GetElement(locator);
+                    System.Threading.Thread.Sleep(50);
+                }
+                catch (NoSuchElementException)
+                {
+                    return;
+                }
+            }
+        }
     }
 }

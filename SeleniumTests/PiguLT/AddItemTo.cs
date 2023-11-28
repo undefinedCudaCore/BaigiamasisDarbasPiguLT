@@ -29,8 +29,10 @@ namespace SeleniumTests.PiguLT
             CartPage.AddToCartFirstProduct();
             CartPage.ClickContinueShoppingButton();
             CartPage.ClickCartButtonFirstTime();
+            string actualName = CartPage.GetFirstItemName();
+            CartPage.ClickRemoveFromProductFromCart();
 
-            Assert.That(CartPage.cartFirstItem, Is.EqualTo(TestData.Cart.CartFirstItemName));
+            Assert.That(actualName, Is.EqualTo(TestData.Cart.CartFirstItemName));
         }
 
         [Test]
@@ -38,15 +40,14 @@ namespace SeleniumTests.PiguLT
         {
             SearchPage.EnterSearchPhrase(TestData.Cart.ItemSearchPhrase4);
             SearchPage.ClickSearchButton();
-            CartPage.ScrollIntoView();
             CartPage.ClickOnCartItemImageTwo();
             CartPage.AddToCartSecondProduct();
             CartPage.ClickContinueShoppingButton();
             CartPage.ClickCartButtonSecondTime();
-            CartPage.ClickRemoveFromProductFromCart();
+            string actualTitle = CartPage.GetSecondItemName();
             CartPage.ClickRemoveFromProductFromCart();
 
-            Assert.That(CartPage.cartSecondItem, Is.EqualTo(TestData.Cart.CartSecondItemName));
+            Assert.That(actualTitle, Is.EqualTo(TestData.Cart.CartSecondItemName));
         }
     }
 }
