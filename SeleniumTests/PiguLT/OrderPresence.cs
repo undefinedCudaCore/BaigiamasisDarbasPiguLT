@@ -4,7 +4,7 @@ using SeleniumTests.BaseTests;
 
 namespace SeleniumTests.PiguLT
 {
-    internal class OrderPresence : BaseTest
+    internal class OrderPresence : BaseTestWithLogin
     {
         [Test]
         public void OrderStatucCheck()

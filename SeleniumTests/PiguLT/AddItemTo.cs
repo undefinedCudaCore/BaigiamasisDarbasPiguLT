@@ -4,7 +4,7 @@ using SeleniumTests.BaseTests;
 
 namespace SeleniumTests.PiguLT
 {
-    internal class AddItemTo : BaseTest
+    internal class AddItemTo : BaseTestWithLogin
     {
         [Test]
         public void AddItemToWishList()

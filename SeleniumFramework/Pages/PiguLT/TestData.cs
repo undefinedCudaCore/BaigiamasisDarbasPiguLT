@@ -9,7 +9,7 @@
             public static string InputEmail3 = "duationthetestforgraduat2@gmail.com";
             public static string InputEmail4 = "tomgrizluy@gmail.com";
             public static string InputPassword = "seleniumtestforgraduationthesis";
-            public static string DisplayMyAccountName = "Graduation Thesis";
+            public static string DisplayMyAccountName = "Demis Karibidis";
         }
 
         public class SearchItem

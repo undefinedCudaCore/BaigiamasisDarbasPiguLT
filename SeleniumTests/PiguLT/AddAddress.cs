@@ -5,7 +5,7 @@ using SeleniumTests.BaseTests;
 
 namespace SeleniumTests.PiguLT
 {
-    internal class AddAddress : BaseTest
+    internal class AddAddress : BaseTestWithLogin
     {
         [Test]
         public void CheckAddAddressInformation()

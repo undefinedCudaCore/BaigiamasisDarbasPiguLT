@@ -1,27 +1,23 @@
 ﻿using NUnit.Framework;
 using SeleniumFramework.Pages.PiguLT;
 using SeleniumFramework.Pages.PiguLTPage;
-using SeleniumTests.BaseTests;
 
-namespace SeleniumTests.PiguLT
+namespace SeleniumTests.BaseTests
 {
-    internal class LoginToPage : BaseTest
+    internal class BaseTestWithLogin : BaseTest
     {
-        [Test]
-        public void LoginToWebShopAccount()
+        [SetUp]
+        public void Login()
         {
+            // Login to page
+            // If you get the error "Too many logins, please try later." when trying to login, change the "EnterLoginEmail" variable. Select one from four:
+            // InputEmail1; InputEmail2; InputEmail3; InputEmail4;
             HomePage.ClickAllowAllCookies();
             HomePage.HoverOnProfileIcon();
             HomePage.ClickOnBlueLoginButton();
             LoginPage.EnterLoginEmail(TestData.Login.InputEmail1);
             LoginPage.EnterLoginPassword(TestData.Login.InputPassword);
             LoginPage.ClickOnGreenLoginButton();
-            HomePage.HoverOnProfileIcon();
-            LoginPage.ClickOnMyAccount();
-            LoginPage.ClickOnEditProfile();
-            LoginPage.GetMyAccountName();
-
-            Assert.That(LoginPage.GetMyAccountName(), Is.EqualTo(TestData.Login.DisplayMyAccountName));
         }
     }
 }

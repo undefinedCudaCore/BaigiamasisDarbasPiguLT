@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseTests\BaseTest.cs" />
+    <Compile Include="BaseTests\BaseTestWithLogin.cs" />
     <Compile Include="PiguLT\AddAddress.cs" />
     <Compile Include="PiguLT\LoginToPage.cs" />
     <Compile Include="PiguLT\OrderPresence.cs" />
