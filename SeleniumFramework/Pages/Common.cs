@@ -24,11 +24,6 @@ namespace SeleniumFramework.Pages
             return GetElements(locator).Count;
         }
 
-        public static IWebElement GetElementToScroll(string locator)
-        {
-            return GetElement(locator);
-        }
-
         internal static void ClickElement(string locator)
         {
             GetElement(locator).Click();
@@ -48,11 +43,6 @@ namespace SeleniumFramework.Pages
         {
             WebDriverWait wait = new WebDriverWait(Driver.GetDriver(), TimeSpan.FromSeconds(2));
             wait.Until(d => d.FindElement(By.XPath(locator)));
-        }
-
-        internal static void WaitForElement()
-        {
-            System.Threading.Thread.Sleep(3000);
         }
 
         internal static void HoverOverElement(string locator)
