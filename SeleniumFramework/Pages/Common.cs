@@ -2,6 +2,8 @@
 using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace SeleniumFramework.Pages
 {
@@ -10,6 +12,16 @@ namespace SeleniumFramework.Pages
         private static IWebElement GetElement(string locator)
         {
             return Driver.GetDriver().FindElement(By.XPath(locator));
+        }
+
+        private static List<IWebElement> GetElements(string locator)
+        {
+            return Driver.GetDriver().FindElements(By.XPath(locator)).ToList();
+        }
+
+        internal static int GetElementCount(string locator)
+        {
+            return GetElements(locator).Count;
         }
 
         public static IWebElement GetElementToScroll(string locator)

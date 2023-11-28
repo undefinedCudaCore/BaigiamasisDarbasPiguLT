@@ -2,12 +2,8 @@
 {
     public class AddressPage
     {
-        public static string firstAddress;
-
         public static void ClickOnMyAccount()
         {
-            Common.WaitForElement();
-
             Common.ClickElement(Locators.AddressPage.MyAccount);
         }
 
@@ -23,9 +19,6 @@
 
         public static void ClickAddressTrashIcon()
         {
-            FirstItemNameForAssert();
-
-            Common.WaitForElement();
             Common.ClickElement(Locators.AddressPage.AddressTrashIcon);
         }
 
@@ -49,6 +42,7 @@
         {
             Common.SendKeysToElement(Locators.AddressPage.InputPhone, phoneNumber);
         }
+
         public static void EnterCustomerAddress(string address)
         {
             Common.SendKeysToElement(Locators.AddressPage.InputAddress, address);
@@ -74,19 +68,21 @@
             Common.ClickElement(Locators.AddressPage.SaveChangesButton);
         }
 
-        public static string GetAddress()
+        public static string GetDefaultAddress()
         {
-            Common.WaitForElementToBeVisible(Locators.AddressPage.SavedAddress);
-
-            return Common.GetElementText(Locators.AddressPage.SavedAddress);
+            Common.WaitForElementToBeVisible(Locators.AddressPage.DefaultSavedAddress);
+            return Common.GetElementText(Locators.AddressPage.DefaultSavedAddress);
+        }
+        public static string GetNewAddress()
+        {
+            string locator = "(//*[contains(@class,'custom-address-col')])[2]//p[1]";
+            Common.WaitForElementToBeVisible(locator);
+            return Common.GetElementText(locator);
         }
 
-        public static string FirstItemNameForAssert()
+        public static int GetAddressCount()
         {
-            Common.WaitForElement();
-
-            firstAddress = GetAddress();
-            return firstAddress;
+            return Common.GetElementCount("//*[contains(@class,'custom-address-col')]");
         }
     }
 }

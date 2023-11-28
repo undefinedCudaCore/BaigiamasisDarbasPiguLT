@@ -22,10 +22,20 @@ namespace SeleniumTests.PiguLT
             AddressPage.EnterCustomerAddress(TestData.Address.AddressText);
             AddressPage.EnterCustomerPostCode(TestData.Address.PostCodeText);
             AddressPage.ClickSaveChangesButton();
+
+            int addressCount = AddressPage.GetAddressCount();
+            string addressDefault = AddressPage.GetDefaultAddress();
+            string addressNew = AddressPage.GetNewAddress();
+
+            Assert.That(addressCount, Is.EqualTo(2));
+            Assert.That(addressNew, Is.EqualTo(TestData.Address.AccountAddress));
+            Assert.That(addressDefault, Is.EqualTo(TestData.Address.AccountAddress));
+
             AddressPage.ClickAddressTrashIcon();
             AddressPage.ClickDeleteAddress();
 
-            Assert.That(AddressPage.firstAddress, Is.EqualTo(TestData.Address.AccountAddress));
+            addressCount = AddressPage.GetAddressCount();
+            Assert.That(addressCount, Is.EqualTo(1));
         }
     }
 }
