@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using SeleniumFramework.Pages.PiguLT;
 using SeleniumFramework.Pages.PiguLTPage;
 using SeleniumTests.BaseTests;
 
@@ -9,7 +10,7 @@ namespace SeleniumTests.PiguLT
         [Test]
         public void CheckAddAddressInformation()
         {
-            LoginPage.ClickOnProfileIcon();
+            HomePage.ClickOnProfileIcon();
             AddressPage.ClickOnMyAccount();
             AddressPage.ClickOnDeliveryAddress();
             AddressPage.ClickAddNewAddressButton();

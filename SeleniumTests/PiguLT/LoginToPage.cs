@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using SeleniumFramework.Pages.PiguLT;
 using SeleniumFramework.Pages.PiguLTPage;
 using SeleniumTests.BaseTests;
 
@@ -13,13 +14,13 @@ namespace SeleniumTests.PiguLT
         // LoginToPage test passes only with "InputEmail1" variable indicated in the "EnterLoginEmail" method.
         public void LoginToWebShopAccount()
         {
-            LoginPage.ClickAllowAllCookies();
-            LoginPage.ClickOnProfileIcon();
-            LoginPage.ClickOnBlueLoginButton();
+            HomePage.ClickAllowAllCookies();
+            HomePage.ClickOnProfileIcon();
+            HomePage.ClickOnBlueLoginButton();
             LoginPage.EnterLoginEmail(TestData.Login.InputEmail1);
             LoginPage.EnterLoginPassword(TestData.Login.InputPassword);
             LoginPage.ClickOnGreenLoginButton();
-            LoginPage.ClickOnProfileIcon();
+            HomePage.ClickOnProfileIcon();
             LoginPage.ClickOnMyAccount();
             LoginPage.ClickOnEditProfile();
             LoginPage.GetMyAccountName();
