@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
 using System;
 using System.Threading;
@@ -41,6 +42,15 @@ namespace SeleniumFramework.Pages
         internal static void WaitForElement()
         {
             Thread.Sleep(3000);
+        }
+
+        internal static void HoverOverElement(string locator)
+        {
+            IWebElement element = GetElement(locator);
+
+            Actions actions = new Actions(Driver.GetDriver());
+            actions.MoveToElement(element);
+            actions.Perform();
         }
     }
 }

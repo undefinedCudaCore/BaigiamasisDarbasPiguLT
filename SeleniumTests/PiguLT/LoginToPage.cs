@@ -15,12 +15,12 @@ namespace SeleniumTests.PiguLT
         public void LoginToWebShopAccount()
         {
             HomePage.ClickAllowAllCookies();
-            HomePage.ClickOnProfileIcon();
+            HomePage.HoverOnProfileIcon();
             HomePage.ClickOnBlueLoginButton();
             LoginPage.EnterLoginEmail(TestData.Login.InputEmail1);
             LoginPage.EnterLoginPassword(TestData.Login.InputPassword);
             LoginPage.ClickOnGreenLoginButton();
-            HomePage.ClickOnProfileIcon();
+            HomePage.HoverOnProfileIcon();
             LoginPage.ClickOnMyAccount();
             LoginPage.ClickOnEditProfile();
             LoginPage.GetMyAccountName();

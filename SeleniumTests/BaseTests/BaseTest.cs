@@ -19,7 +19,7 @@ namespace SeleniumTests.BaseTests
             // If you get the error "Too many logins, please try later." when trying to login, change the "EnterLoginEmail" variable. Select one from four:
             // InputEmail1; InputEmail2; InputEmail3; InputEmail4;
             HomePage.ClickAllowAllCookies();
-            HomePage.ClickOnProfileIcon();
+            HomePage.HoverOnProfileIcon();
             HomePage.ClickOnBlueLoginButton();
             LoginPage.EnterLoginEmail(TestData.Login.InputEmail1);
             LoginPage.EnterLoginPassword(TestData.Login.InputPassword);

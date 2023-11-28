@@ -10,7 +10,7 @@ namespace SeleniumTests.PiguLT
         [Test]
         public void CheckAddAddressInformation()
         {
-            HomePage.ClickOnProfileIcon();
+            HomePage.HoverOnProfileIcon();
             AddressPage.ClickOnMyAccount();
             AddressPage.ClickOnDeliveryAddress();
             AddressPage.ClickAddNewAddressButton();
