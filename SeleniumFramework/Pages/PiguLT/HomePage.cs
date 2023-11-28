@@ -7,11 +7,11 @@ namespace SeleniumFramework.Pages.PiguLT
         public static void ClickAllowAllCookies()
         {
             Common.ClickElement(Locators.LoginPage.AllowCookiesButton);
+            Common.WaitForPageToLoad();
         }
 
         public static void HoverOnProfileIcon()
         {
-            Common.WaitForElement();
             Common.HoverOverElement(Locators.LoginPage.IconProfile);
         }
 

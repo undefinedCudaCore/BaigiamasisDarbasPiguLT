@@ -2,7 +2,6 @@
 using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
 using System;
-using System.Threading;
 
 namespace SeleniumFramework.Pages
 {
@@ -41,7 +40,7 @@ namespace SeleniumFramework.Pages
 
         internal static void WaitForElement()
         {
-            Thread.Sleep(3000);
+            System.Threading.Thread.Sleep(3000);
         }
 
         internal static void HoverOverElement(string locator)
@@ -51,6 +50,32 @@ namespace SeleniumFramework.Pages
             Actions actions = new Actions(Driver.GetDriver());
             actions.MoveToElement(element);
             actions.Perform();
+        }
+
+        // After closing cookies, the page reloads a lot
+        // while scripts are added to <head> part of the page
+        // This method reads the page source with 50ms delays
+        // and waits until the page source has not changed for at least 500ms
+        // before allowing tests to proceed further
+        internal static void WaitForPageToLoad()
+        {
+            string sourcePrevious = Driver.GetDriver().PageSource;
+            int timeout = 0;
+
+            while (timeout < 500)
+            {
+                string sourceCurrent = Driver.GetDriver().PageSource;
+                if (!sourceCurrent.Equals(sourcePrevious))
+                {
+                    sourcePrevious = sourceCurrent;
+                    timeout = 0;
+                    System.Threading.Thread.Sleep(50);
+                } 
+                else
+                {
+                    timeout += 50;
+                }
+            }
         }
     }
 }
