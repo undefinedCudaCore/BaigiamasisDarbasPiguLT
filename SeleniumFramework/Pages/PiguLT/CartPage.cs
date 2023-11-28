@@ -2,19 +2,18 @@
 {
     public class CartPage
     {
-
         public static void ClickSortDropdown()
         {
             Common.ClickElement(Locators.CartPage.SelectSortDropdown);
         }
 
-        public static void SelectSortDropdownValue()
+        public static void SelectSortPriceDescending()
         {
             Common.ClickElement(Locators.CartPage.SelectProductSortDropdownValue);
             Common.WaitForElementToNotExist("//*[@class='loader-overlay']");
         }
 
-        public static void ClickOnCartItemImegaOne()
+        public static void ClickOnCartItemImageOne()
         {
             Common.ClickElement(Locators.CartPage.FoundItemImage1);
         }
@@ -24,13 +23,7 @@
             Common.ClickElement(Locators.CartPage.FoundItemImage2);
         }
 
-        public static void AddToCartFirstProduct()
-        {
-            string locator = Locators.CartPage.ProductSidebarButton;
-            Common.ClickElement(locator);
-        }
-
-        public static void AddToCartSecondProduct()
+        public static void ClickAddToCart()
         {
             string locator = Locators.CartPage.ProductSidebarButton;
             Common.ClickElement(locator);
@@ -48,12 +41,7 @@
             Common.ClickElement(locator);
         }
 
-        public static void ClickCartButtonFirstTime()
-        {
-            Common.ClickElement(Locators.CartPage.CartButton);
-        }
-
-        public static void ClickCartButtonSecondTime()
+        public static void ClickCartButton()
         {
             Common.ClickElement(Locators.CartPage.CartButton);
         }

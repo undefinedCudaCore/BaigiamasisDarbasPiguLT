@@ -24,11 +24,11 @@ namespace SeleniumTests.PiguLT
             SearchPage.EnterSearchPhrase(TestData.Cart.ItemSearchPhrase3);
             SearchPage.ClickSearchButton();
             CartPage.ClickSortDropdown();
-            CartPage.SelectSortDropdownValue();
-            CartPage.ClickOnCartItemImegaOne();
-            CartPage.AddToCartFirstProduct();
+            CartPage.SelectSortPriceDescending();
+            CartPage.ClickOnCartItemImageOne();
+            CartPage.ClickAddToCart();
             CartPage.ClickContinueShoppingButton();
-            CartPage.ClickCartButtonFirstTime();
+            CartPage.ClickCartButton();
             string actualName = CartPage.GetFirstItemName();
             CartPage.ClickRemoveFromProductFromCart();
 
@@ -41,9 +41,9 @@ namespace SeleniumTests.PiguLT
             SearchPage.EnterSearchPhrase(TestData.Cart.ItemSearchPhrase4);
             SearchPage.ClickSearchButton();
             CartPage.ClickOnCartItemImageTwo();
-            CartPage.AddToCartSecondProduct();
+            CartPage.ClickAddToCart();
             CartPage.ClickContinueShoppingButton();
-            CartPage.ClickCartButtonSecondTime();
+            CartPage.ClickCartButton();
             string actualTitle = CartPage.GetSecondItemName();
             CartPage.ClickRemoveFromProductFromCart();
 
