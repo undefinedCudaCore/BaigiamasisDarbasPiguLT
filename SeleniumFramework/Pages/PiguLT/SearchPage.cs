@@ -4,8 +4,6 @@
     {
         public static void EnterSearchPhrase(string searchPhrase)
         {
-            Common.WaitForElement();
-
             Common.SendKeysToElement(Locators.SearchItemPage.InputSearch, searchPhrase);
         }
 

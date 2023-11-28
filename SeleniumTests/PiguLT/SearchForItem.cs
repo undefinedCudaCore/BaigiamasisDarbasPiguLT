@@ -4,7 +4,7 @@ using SeleniumTests.BaseTests;
 
 namespace SeleniumTests.PiguLT
 {
-    internal class SearchForItem : BaseTest
+    internal class SearchForItem : BaseTestWithLogin
     {
         [Test]
         public void SearchItemInWebShop()

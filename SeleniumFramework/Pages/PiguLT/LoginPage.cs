@@ -2,23 +2,6 @@
 {
     public class LoginPage
     {
-        public static void ClickAllowAllCookies()
-        {
-            Common.ClickElement(Locators.LoginPage.AllowCookiesButton);
-        }
-
-        public static void ClickOnProfileIcon()
-        {
-            Common.WaitForElement();
-
-            Common.ClickElement(Locators.LoginPage.IconProfile);
-        }
-
-        public static void ClickOnBlueLoginButton()
-        {
-            Common.ClickElement(Locators.LoginPage.BlueLoginButton);
-        }
-
         public static void EnterLoginEmail(string loginEmail)
         {
             Common.SendKeysToElement(Locators.LoginPage.InputEmail, loginEmail);
